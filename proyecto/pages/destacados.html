@@ -10,31 +10,45 @@
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> <!--favicon-->
 
         <!--CSS-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
 
     <body>
-        <!--HEADER-->
-        <header>
-            <div class="contenedorHeader">
-                <!--Logo esquina izquierda-->
-                <a class="logoHeader" href="../index.html">
-                    <img class="logoBiMozHeader" src="../assets/img/logo_modo_noche.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
-                </a>
-                
+        <!--HEADER-->    
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!--Logo header-->
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="logoBiMozHeader" src="../assets/img/logo_modo_noche.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
+                    </a>
 
-                <!--Navegación esquina derecha-->
-                <nav class="navegacion">
-                    <ul class="listaNav">
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="./destacados.html">DESTACADOS</a></li>
-                        <li><a href="./mi_arte.html">MI ARTE</a></li>
-                        <li><a href="./servicios.html">SERVICIOS</a></li>
-                        <li><a href="./contactame.html">CONTACTAME</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <!--Navegación esquina derecha-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link m-1" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./destacados.html">DESTACADOS</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./mi_arte.html">MI ARTE</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./servicios.html">SERVICIOS</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./contactame.html">CONTACTAME</a></li>
+                            </li>
+                    </div>
+                </div>
+            </nav>
         </header>  
 
         <!--MAIN-->
@@ -260,35 +274,34 @@
         </main>
 
         <!--FOOTER-->
-        <footer>
-            <div class="contenedorFooter">
-                <ul class="listaFooter">
-                    <!--Icono + Texto para volver a la página principal-->
-                    <li class="itemFooter"><a class="linkFooter" href="../index.html">
+        <footer class="container-fluid">
+            <ul class="d-flex justify-content-center m-0">
+                <!--Icono + Texto para volver a la página principal-->
+                <li class="m-2">
+                    <a class="linkFooter" href="../index.html">
                         <img class="logoFooter" src="../assets/img/logo_modo_dia.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
                         BiMoz
-                        </a>
-                    </li>
-    
-                    <!--Texto para ir a la página de contacto-->
-                    <li class="itemFooter">
-                        <a href="./contactame.html">Contacto</a>
-                    </li>
-    
-                    <!--Icono para ir a Youtube-->
-                    <li class="itemFooter"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                    <!--Icono para ir a Instagram-->
-                    <li class="itemFooter"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <!--Icono para ir a Pinterest-->
-                    <li class="itemFooter"><a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
-                    <!--Icono para mandar un mail-->
-                    <li class="itemFooter"><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
-            </div>
-            
+                    </a>
+                </li>
+
+                <!--Texto para ir a la página de contacto-->
+                <li class="m-2">
+                    <a class="linkFooter" href="./contactame.html">Contacto</a>
+                </li>
+
+                <!--Icono para ir a Youtube-->
+                <li class="m-2"><a class="linkFooter" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <!--Icono para ir a Instagram-->
+                <li class="m-2"><a class="linkFooter" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <!--Icono para ir a Pinterest-->
+                <li class="m-2"><a class="linkFooter" href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                <!--Icono para mandar un mail-->
+                <li class="m-2"><a class="linkFooter" href="https://mail.google.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>            
         </footer>
 
-
+        <!--Boopstrap js-->
+        <script src="../js/bootstrap.bundle.min.js"></script>
 
     </body>
 
