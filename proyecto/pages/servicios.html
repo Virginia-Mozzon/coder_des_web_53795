@@ -17,7 +17,7 @@
     <body>
         
         <!--HEADER-->    
-        <header class="sticky-top">
+        <header class="sticky-top container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <!--Logo header-->
@@ -53,79 +53,117 @@
         </header>
         
         <!--MAIN-->
-        <main>
-            <!--Cabecera y título de la página-->
+        <main class="mainServicios container-fluid p-0">
+            <!--Cabecera de la página-->
+            <section class="video d-flex justify-content-center align-items-center">
+                <video autoplay muted loop id="myVideo">
+                    <source src="../assets/video/video_servicios.mp4" type="video/mp4">
+                </video>              
+            </section>
+
+            <!--Titulo de la pagina-->
             <section>
-                <!--La idea es sumar un video de fondo para este título, el mismo del index, pero con los colores invertidos-->
-                <h1>SERVICIOS OFRECIDOS</h1>
+                <h1 class="m-5">SERVICIOS OFRECIDOS</h1>
             </section>
 
             <!--Morfologia-->
-            <section>
+            <section class="morfologia">
                 <!--Primera guarda de 6 fotos-->
-                <div>
-                    <img src="../assets/img/morfo_01_naranja.webp" alt=" La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista cenital." loading="lazy">
-                    <img src="../assets/img/morfo_02_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista trasera." loading="lazy">
-                    <img src="../assets/img/morfo_03_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista trasera lateral." loading="lazy">
-                    <img src="../assets/img/morfo_04_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista delantera lateral." loading="lazy">
-                    <img src="../assets/img/morfo_05_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista delantera frente." loading="lazy">
-                    <img src="../assets/img/morfo_06_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista lateral." loading="lazy">
+                <div class="d-flex justify-content-center w-100 h-auto">
+                    <img class="imagenBanda1" src="../assets/img/morfo_01_naranja.webp" alt=" La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista cenital." loading="lazy">
+                    <img class="imagenBanda1" src="../assets/img/morfo_02_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista trasera." loading="lazy">
+                    <img class="imagenBanda1" src="../assets/img/morfo_03_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista trasera lateral." loading="lazy">
+                    <img class="imagenBanda1" src="../assets/img/morfo_04_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista delantera lateral." loading="lazy">
+                    <img class="imagenBanda1" src="../assets/img/morfo_05_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista delantera frente." loading="lazy">
+                    <img class="imagenBanda1" src="../assets/img/morfo_06_naranja.webp" alt="La imagen es la representación abstracta de una figura compuesta por dos triángulos naranjas unidos por una intersección violeta engrillada. Vista lateral." loading="lazy">
                 </div>
+                
                 <h2>MORFOLOGIA</h2>
                 
                 <!--Conjunto dos fotografias mas descripción-->
-                <div>
-                    <img src="../assets/img/morfo_07_azul.webp" alt="La imagen representa una figura abstracta de colores azules sobre un fondo blanco. La figura es semejante a un volumen como de triángulo, unidas sus esquinas mediante unos alambres metalicos. Vista lateral desde arriba." loading="lazy">
-                    <img src="../assets/img/morfo_08_azul.webp" alt="La imagen representa una figura abstracta de colores azules sobre un fondo blanco. La figura es semejante a un volumen como de triángulo, unidas sus esquinas mediante unos alambres metalicos. Vista cenital." loading="lazy">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                </div>
-
-                <!--Conjunto de 4 fotografías de una misma figura (distintas propuestas estéticas)-->
-                <div>
-                    <!--Fotos de arriba-->
+                <div class="grillaMorfologia d-flex">
                     <div>
-                        <img src="../assets/img/morfo_09_amarillo.webp" alt="En la imagen esta representada una figura geométrica abstracta compuesta de una estrella de 3 puntas blanca en el centro que se replica a su fondo, formando un cuadrado. A su alrededor, unas aletas generadas por múltiples lineas en tonos grises. " loading="lazy">
-                        <img src="../assets/img/morfo_10_amarillo.webp" alt="En la imagen esta representada una figura geométrica abstracta compuesta de una estrella de 3 puntas blanca en el centro que se replica a su fondo, formando un cuadrado. A su alrededor, unas aletas generadas por múltiples lineas en tonos amarillos." loading="lazy">
+                        <div class="d-flex">
+                            <img class="imagen" src="../assets/img/morfo_07_azul.webp" alt="La imagen representa una figura abstracta de colores azules sobre un fondo blanco. La figura es semejante a un volumen como de triángulo, unidas sus esquinas mediante unos alambres metalicos. Vista lateral desde arriba." loading="lazy">
+                            <img class="imagen" src="../assets/img/morfo_08_azul.webp" alt="La imagen representa una figura abstracta de colores azules sobre un fondo blanco. La figura es semejante a un volumen como de triángulo, unidas sus esquinas mediante unos alambres metalicos. Vista cenital." loading="lazy">
+                        </div>
+                        <div class="texto m-5">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                        </div>
                     </div>
+                    
+                    <div class="grilla2Morfo bg-danger container">
+                        <div class="row">
+                            <img class="col-6 p-0" src="../assets/img/morfo_09_amarillo.webp" alt="En la imagen esta representada una figura geométrica abstracta compuesta de una estrella de 3 puntas blanca en el centro que se replica a su fondo, formando un cuadrado. A su alrededor, unas aletas generadas por múltiples lineas en tonos grises. " loading="lazy">
+                            <img class="col-6 p-0" src="../assets/img/morfo_10_amarillo.webp" alt="En la imagen esta representada una figura geométrica abstracta compuesta de una estrella de 3 puntas blanca en el centro que se replica a su fondo, formando un cuadrado. A su alrededor, unas aletas generadas por múltiples lineas en tonos amarillos." loading="lazy">
+                        </div>
+                        <div class="row">
+                            <img class="col-6 p-0" src="../assets/img/morfo_11_amarillo.webp" alt="En la imagen esta representada una figura geométrica abstracta compuesta de una estrella de 3 puntas negra en el centro que se replica a su fondo, formando un cuadrado. A su alrededor, unas aletas generadas por múltiples lineas en tonos amarillos." loading="lazy">
+                            <img class="col-6 p-0" src="../assets/img/morfo_12_amarillo.webp" alt="En la imagen esta representada una figura geométrica abstracta compuesta de una estrella de 3 puntas gris en el centro que se replica a su fondo, formando un cuadrado. A su alrededor, unas aletas generadas por múltiples lineas en tonos naranjas." loading="lazy">
+                        </div>
+                        
 
-                    <!--Fotos de abajo-->
-                    <div>
-                        <img src="../assets/img/morfo_11_amarillo.webp" alt="En la imagen esta representada una figura geométrica abstracta compuesta de una estrella de 3 puntas negra en el centro que se replica a su fondo, formando un cuadrado. A su alrededor, unas aletas generadas por múltiples lineas en tonos amarillos." loading="lazy">
-                        <img src="../assets/img/morfo_12_amarillo.webp" alt="En la imagen esta representada una figura geométrica abstracta compuesta de una estrella de 3 puntas gris en el centro que se replica a su fondo, formando un cuadrado. A su alrededor, unas aletas generadas por múltiples lineas en tonos naranjas." loading="lazy">
                     </div>
+                    
+                    
+                    
+                    
+                    
                 </div>
 
                 <!--Ultima guarda de 8 fotografias-->
-                <div>
-                    <img src="../assets/img/morfo_13_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro. " loading="lazy">
-                    <img src="../assets/img/morfo_14_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
-                    <img src="../assets/img/morfo_15_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
-                    <img src="../assets/img/morfo_16_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
-                    <img src="../assets/img/morfo_17_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
-                    <img src="../assets/img/morfo_18_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
-                    <img src="../assets/img/morfo_19_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
-                    <img src="../assets/img/morfo_20_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
+                <div class="d-flex mt-5 mb-5">
+                    <img class="imagenBanda2" src="../assets/img/morfo_13_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro. " loading="lazy">
+                    <img class="imagenBanda2" src="../assets/img/morfo_14_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
+                    <img class="imagenBanda2" src="../assets/img/morfo_15_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
+                    <img class="imagenBanda2" src="../assets/img/morfo_16_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
+                    <img class="imagenBanda2" src="../assets/img/morfo_17_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
+                    <img class="imagenBanda2" src="../assets/img/morfo_18_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
+                    <img class="imagenBanda2" src="../assets/img/morfo_19_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
+                    <img class="imagenBanda2" src="../assets/img/morfo_20_lila.webp" alt="La imagen representa una figura abstracta con múltiples cortes curvados. Compuesta de un degradé de colores monocromátivos de un lila grisado a un negro oscuro." loading="lazy">
                 </div>
             </section>
 
             <!--Diseño funcional-->
-            <section>
-                <h2>DISEÑO FUNCIONAL</h2>
+            <section class="disFuncional">
+                <h2 class="pt-5">DISEÑO FUNCIONAL</h2>
 
                 <!--Asiento de hormigón-->
-                <div>
-                    <img src="../assets/img/funcional_hormigon_01.webp" alt="La imagen representa un asiento de homigón de exterior, brillante y liso, en un parque con piso de tierra en un día soleado. El plano está recortado y la foto fue sacada desde un ángulo lateral arriba. El banco tiene los bordes redondeados y una inclinación, generando un hueco en el contro, donde hay dos orificios." loading="lazy">
-                    <img src="../assets/img/funcional_hormigon_02.webp" alt="La imagen representa un asiento de homigón de exterior, brillante y liso, en un parque con piso de tierra en un día soleado. El banco tiene los bordes redondeados y una inclinación, generando un hueco en el contro, donde hay dos orificios. A su vez, está sostenido por un tubo negro encastrado en el suelo. La fotografía es un plano general desde lejos, generando un ángulo simétrico." loading="lazy">
-                    <img src="../assets/img/funcional_hormigon_03.webp" alt="La imagen representa un asiento de homigón de exterior, brillante y liso, en un parque con piso de tierra en un día soleado. El plano está recortado y la foto fue sacada desde un ángulo lateral cerrado, llegando a ser un plano detalle, mostrando únicamente una esquina redondeada." loading="lazy">
+                <div class="d-flex justify-content-center">
+                    <img class="imagen1" src="../assets/img/funcional_hormigon_01.webp" alt="La imagen representa un asiento de homigón de exterior, brillante y liso, en un parque con piso de tierra en un día soleado. El plano está recortado y la foto fue sacada desde un ángulo lateral arriba. El banco tiene los bordes redondeados y una inclinación, generando un hueco en el contro, donde hay dos orificios." loading="lazy">
+                    <img class="imagen2" src="../assets/img/funcional_hormigon_02.webp" alt="La imagen representa un asiento de homigón de exterior, brillante y liso, en un parque con piso de tierra en un día soleado. El banco tiene los bordes redondeados y una inclinación, generando un hueco en el contro, donde hay dos orificios. A su vez, está sostenido por un tubo negro encastrado en el suelo. La fotografía es un plano general desde lejos, generando un ángulo simétrico." loading="lazy">
+                    <img class="imagen1" src="../assets/img/funcional_hormigon_03.webp" alt="La imagen representa un asiento de homigón de exterior, brillante y liso, en un parque con piso de tierra en un día soleado. El plano está recortado y la foto fue sacada desde un ángulo lateral cerrado, llegando a ser un plano detalle, mostrando únicamente una esquina redondeada." loading="lazy">
                 </div>
 
                 <!--Mesa de ping pong de exterior-->
-                <div>
-                    <img src="../assets/img/funcional_pingpong_01.webp" alt="En la imagen se observa un renderizado de una mesa blanca preparada para jugar al ping pong, con una única pata curvada que la sostiene, cuya curvatura inicia en las esquinas de la superficie. Por encima, una guía metálica que sostiene una placa largada y fina de vidrio o acrílico, que funciona como red de la mesa de ping pong. Por encima de la mesa, dos paletas de ping pong, cada una ubicada en una mitad de la mesa." loading="lazy">
-                    <img src="../assets/img/funcional_pingpong_02.webp" alt="En la imagen se observa un renderizado de una mesa blanca preparada para jugar al ping pong, con una única pata curvada que la sostiene, cuya curvatura inicia en las esquinas de la superficie. Por encima, una guía metálica que sostiene una placa largada y fina de vidrio o acrílico, que funciona como red de la mesa de ping pong." loading="lazy">
-                    <img src="../assets/img/funcional_pingpong_03.webp" alt="En la imagen se observa un renderizado de una mesa blanca preparada para jugar al ping pong, con una única pata curvada que la sostiene, cuya curvatura inicia en las esquinas de la superficie. Por encima, una guía metálica que sostiene una placa largada y fina de vidrio o acrílico, que funciona como red de la mesa de ping pong. Por encima de la mesa, dos paletas de ping pong, cada una ubicada en una mitad de la mesa." loading="lazy">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide m-auto p-5 w-75" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                    <div class="carousel-inner" data-bs-interval="10000">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/funcional_pingpong_01.webp" class="d-block carrouselSize" alt="En la imagen se observa un renderizado de una mesa blanca preparada para jugar al ping pong, con una única pata curvada que la sostiene, cuya curvatura inicia en las esquinas de la superficie. Por encima, una guía metálica que sostiene una placa largada y fina de vidrio o acrílico, que funciona como red de la mesa de ping pong. Por encima de la mesa, dos paletas de ping pong, cada una ubicada en una mitad de la mesa." loading="lazy">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../assets/img/funcional_pingpong_02.webp" class="d-block carrouselSize" alt="En la imagen se observa un renderizado de una mesa blanca preparada para jugar al ping pong, con una única pata curvada que la sostiene, cuya curvatura inicia en las esquinas de la superficie. Por encima, una guía metálica que sostiene una placa largada y fina de vidrio o acrílico, que funciona como red de la mesa de ping pong." loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/funcional_pingpong_03.webp" class="d-block carrouselSize" alt="En la imagen se observa un renderizado de una mesa blanca preparada para jugar al ping pong, con una única pata curvada que la sostiene, cuya curvatura inicia en las esquinas de la superficie. Por encima, una guía metálica que sostiene una placa largada y fina de vidrio o acrílico, que funciona como red de la mesa de ping pong. Por encima de la mesa, dos paletas de ping pong, cada una ubicada en una mitad de la mesa." loading="lazy">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
                 <!--Estante de fieltro plegable-->

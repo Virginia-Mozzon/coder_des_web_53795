@@ -24,6 +24,16 @@ header{
     }
 }
 
+/* ---- Videos de encabezado ----*/
+#myVideo {
+    right:0;
+    bottom:0;
+    width: 50%;
+    height: 60vh;
+}
+
+
+
 /* ---- INDEX ----*/
 .mainIndex{
     b{
@@ -31,22 +41,10 @@ header{
     }
 
     /* ---- Video de encabezado ----*/
-    #myVideo {
-        position: fixed;
-        right:0;
-        bottom:0;
-        min-width:100%;
-        min-height:100%;
-    }
-
+    
     .video{
         background-color: #FBE7AA;
         object-fit: cover;
-    }
-
-    .responsiveVideo{
-        width: 75%;
-        height: 50vh;
     }
 
     /* ---- grilla Sobre Mi ----*/
@@ -161,6 +159,13 @@ header{
 
     .actualidad{
         background-color: #E6E8EA;
+        padding: 3rem;
+        .elementosActualidad{
+            width: 75%;
+            .sectorElementosActualidad{
+                width: 50%;
+            }
+        }
         .inputsRow1{
             width: 49%;
         }
@@ -207,6 +212,62 @@ header{
     
 }
 
+/* ---- SERVICIOS ---- */
+.mainServicios{
+    h1{
+        font-weight: 900;
+        color: #5B574B;
+        font-size: 3rem;
+    }
+
+    .video{
+        background-color: c9c9cb;
+        object-fit: cover;
+    }
+
+    .morfologia{
+        background-color: #FBE7AA;
+
+        .imagenBanda1{
+            width: 16.6%;
+            height: auto;
+            object-fit: contain;
+        }
+        .imagen{
+            width: 25%;
+        }
+        .imagenBanda2{
+            width: 12.5%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .disFuncional{
+        background-color: #E5E5E3;
+        .imagen1{
+            width: 30%;
+            object-fit: contain;
+        }
+        .imagen2{
+            width: 40%;
+            object-fit: contain;
+        }
+        .carrouselSize{
+            width: auto;
+            height: 75vh;
+            object-fit: cover;
+        }
+    }
+
+    h2{
+        font-weight: 700;
+        color: #5B574B;
+        font-size: 2rem;
+        margin:2rem;
+    }
+}
+
 /* ---- Responsive ----*/
 @media (max-width:480px){
     
@@ -216,7 +277,7 @@ header{
             font-size: 0.75rem;
             text-align: center;
         }
-        .responsiveVideo{
+        #myVideo{
             width:100%;
             height:100%;
         }
@@ -266,6 +327,20 @@ header{
                 height: 30vh;
             }
         }
+        .actualidad{
+            padding: 2rem 1rem;
+            .elementosActualidad{
+                width: 100%;
+                flex-direction: column;
+                .sectorElementosActualidad{
+                    width: 100%;
+                    .mapa{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
         
         h2{
             width: 100%;
@@ -279,7 +354,7 @@ header{
         p{
             font-size: 1rem;  
         }
-        .responsiveVideo{
+        #myVideo{
             width:100%;
             height:50vh;
         }
