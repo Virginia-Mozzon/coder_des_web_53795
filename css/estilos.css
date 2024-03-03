@@ -607,6 +607,176 @@ header{
 
 }
 
+.mainMiArte{
+    .encabezado{
+        height: 75vh;
+        object-fit: contain;
+    }
+    h1{
+        font-weight: 900;
+        color: #000000;
+        font-size: 3rem;
+        padding: 0 3rem;
+    }
+    .dibujos{
+        .izqDib1{
+            background-color: #FBE7AA;
+            padding-top: 20px;
+            h2{
+                margin: 25px;
+                font-weight: 700;
+
+            }
+            .guarda{
+                img{
+                    width: 33.32%;
+                    object-fit: cover;
+                }
+            }
+            .grilla {
+                display: grid;
+                gap: 20px;
+                padding: 20px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "im1 im2"
+                                     "im1 im3";
+                img{
+                    object-fit: cover;
+                }
+                .im1{grid-area: im1;}
+                .im2{grid-area: im2;}
+                .im3{grid-area: im3;}
+            }
+        }
+        .separadorGris{
+            height: 5vh;
+            background-color: #c9c9cb;
+        }
+        .dibujos2{
+            position: relative;
+            .tigreFondo{
+                width: 90%;
+            }
+            .tigreArriba{
+                width: 500px;
+                height: auto;
+                position: absolute;
+                top: 150px;
+                right: 10px;
+                border-radius: 100px 0px 0px 100px;
+            }
+        }
+        
+    }
+    .cuadros{        
+        .cuadros1{
+            
+            figure{
+                width: 30%;
+                padding: 1rem;
+                background-color: #f2a42e;
+            }
+            .derecha{ 
+                background-color: #E6E8EA;
+                width: 70%;
+                .grilla{
+                    background-color: #E6E8EA;
+                    width: 55%;
+                    padding: 25px;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(6, 1fr);
+                    grid-template-areas: "im1 im1 ttl ttl"
+                                         "im1 im1 im3 im4"
+                                         "im1 im1 im3 im4"
+                                         "im2 im2 im5 im5"
+                                         "im2 im2 im5 im5"
+                                         "im2 im2 im5 im5";
+                    gap: 5px;
+                    h2{
+                        grid-area: ttl;
+                        font-weight: 700;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .im1{grid-area: im1;
+                        /* width: auto;
+                        align-self: self-start;*/} 
+                    .im2{grid-area: im2;
+                        /* width: auto;
+                        align-self: self-start;*/} 
+                    .im3{grid-area: im3;}
+                    .im4{grid-area: im4;}
+                    .im5{grid-area: im5;}
+                }
+            }
+            
+            
+        }
+
+        .cuadros2{
+            height: 75vh;
+    
+            .compo {
+                position: relative;
+
+                .im1 {
+                    scale: .8;
+                    border: 10px solid #f5c126; 
+                }
+
+                .im2{
+                    position: absolute;
+                    height: 50%;
+                    width: 50%;
+                    border-radius: 50%;
+                    right: -10px;
+                    top: 60px;
+                    scale: .8;
+                    object-fit: cover;
+                    box-shadow: 18px 14px 14px -8px rgba(0,0,0,0.25);
+                }
+            }
+            
+        }
+    }
+    .fotos{
+        h2{
+            background-color: #c9c9cb;
+            font-weight: 700;
+        }
+        .guardaFotos{
+            background-color: #c9c9cb;
+            img{
+                width: 11%;
+                object-fit: cover;
+            }
+        }
+
+        .grilla{
+            background-color: #FBE7AA;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "im1 im2 im4 im4"
+                                 "im1 im3 im4 im4";
+
+            gap: 10px;
+            img{
+                object-fit: cover;
+            }                     
+            .im1{grid-area: im1;}
+            .im2{grid-area: im2;}
+            .im3{grid-area: im3;}
+            .im4{grid-area: im4;}
+        }
+    
+    }
+}
 
 /* ---- Responsive ----*/
 @media (max-width:480px){
