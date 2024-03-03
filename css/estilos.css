@@ -299,6 +299,39 @@ header{
     }
 }
 
+/* ----- DESTACADOS -----*/
+.mainDestacados{
+    .encabezadoDestacados{
+        background-image: url(../assets/img/contactame_encabezado.webp);
+        background-position: center;
+        background-size: 50%;
+        background-color: #FBE7AA;
+        background-repeat: no-repeat;
+        h1{
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 9vh;
+            font-weight: 300;
+            color: #5B574B;
+            font-size: 3rem;
+            span{
+                font-weight: 900;
+            }
+            .bBlanco{
+                color: white;
+            }
+            .bNegro{
+                color: black;
+            }
+        }
+    }
+        
+    
+}
+
+
 /* ---- Responsive ----*/
 @media (max-width:480px){
     
