@@ -32,8 +32,6 @@ header{
     height: 60vh;
 }
 
-
-
 /* ---- INDEX ----*/
 .mainIndex{
     b{
@@ -200,7 +198,7 @@ header{
             box-shadow: 0 0 13px 0.1rem rgb(52, 52, 52, 0.25);
         }
         input[type="email"]:not(:placeholder-shown):invalid {
-            border: 2px solid tomato;
+            border: 0.1rem solid tomato;
             background: mistyrose;
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
             background-repeat: no-repeat;
@@ -221,7 +219,7 @@ header{
     }
 
     .video{
-        background-color: c9c9cb;
+        background-color: #c9c9cb;
         object-fit: cover;
     }
 
@@ -236,6 +234,17 @@ header{
         .imagen{
             width: 25%;
         }
+        .grilla2Morfo{
+            width: 35%;
+        }
+        .grilla1Morfo{
+            width: 65%;
+        }
+        .texto {
+            color: #5B574B;
+            b{
+                color: #f2a42e;
+        }}
         .imagenBanda2{
             width: 12.5%;
             height: auto;
@@ -253,13 +262,35 @@ header{
             width: 40%;
             object-fit: contain;
         }
-        .carrouselSize{
-            width: auto;
-            height: 75vh;
-            object-fit: cover;
+        .imagen3{
+            width: 33.32%;
+        }
+        .estante{
+            img{
+                width: auto;
+                height: 47vh;
+                object-fit: cover;
+            }
         }
     }
 
+    .arquitecturaBanda {
+        object-fit: cover;
+    }
+    .freddo{
+        object-fit: cover;
+        height: 31vh;
+    }
+    .arq{
+        object-fit: cover;
+        height: auto;
+    }
+
+    .renders{
+        b{
+            color: #FBE7AA;
+        }
+    }
     h2{
         font-weight: 700;
         color: #5B574B;
