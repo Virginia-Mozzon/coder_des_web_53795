@@ -327,8 +327,284 @@ header{
             }
         }
     }
-        
     
+    h2{
+        font-size: 5rem;
+        font-weight: 900;
+        color: #080808;
+    }
+
+    .cueros{
+        background-color: #c9c9cb;
+        b{
+            color: #f2a42e;
+        }
+
+        /*--- grilla 1 cueros ---*/
+        .cuerosGrilla1{
+            width: 85%;
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "imagenCueros1 imagenCueros2 imagenCueros3 imagenCueros3 imagenCueros4"
+                                "cueros cueros imagenCueros3 imagenCueros3 imagenCueros5";
+
+            gap: 1rem;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+            }
+
+            .imagenCueros1{
+                grid-area: imagenCueros1;
+            }
+            .imagenCueros2{
+                grid-area: imagenCueros2;
+            }
+            .imagenCueros3{
+                grid-area: imagenCueros3;
+            }
+            .imagenCueros4{
+                grid-area: imagenCueros4;
+            }
+            .imagenCueros5{
+                grid-area: imagenCueros5;
+            }
+            .tituloCueros{
+                grid-area: cueros;
+                display: flex;
+                justify-content: center;
+                align-items: center;   
+            }
+        }
+        
+        /*--- grilla 2 cueros ---*/
+        .cuerosGrilla2{
+            width: 85%;
+            padding-bottom: 1rem;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "imagen6 imagen6 imagen7 imagen8 imagen9 imagen10 imagen10"
+                                 "imagen6 imagen6 texto2 texto2 texto2 imagen10 imagen10"
+                                 "imagen6 imagen6 texto2 texto2 texto2 imagen10 imagen10";
+            gap: 1rem;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .textoCueros{
+                grid-area: texto2;
+                padding: 2rem;
+                font-weight: 300;
+                font-size: 0.8rem;
+            }
+            .imagenCueros6{
+                grid-area: imagen6;
+            }
+            .imagenCueros7{
+                grid-area: imagen7;
+            }
+            .imagenCueros8{
+                grid-area: imagen8;
+            }
+            .imagenCueros9{
+                grid-area: imagen9;
+            }
+            .imagenCueros10{
+                grid-area: imagen10;
+            }
+        }
+
+    }
+    
+    .ypf{
+        .guardaYPF1{
+            width: 85%;
+            .ypfBanda{
+                width: 24.3%;
+                height:auto;
+                object-fit: contain;
+            }
+        }
+        
+        .grillaYPF1{
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "imagen1 imagen1 imagen2 imagen3 imagen4 imagen5 imagen6"
+                                 "imagen1 imagen1 texto texto texto imagen5 imagen6"
+                                 "imagen1 imagen1 texto texto texto imagen5 imagen6";
+            gap: 1rem;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .tituloYPF{
+                grid-area: texto;
+                font-size: 8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .imagenYPF1{
+                grid-area: imagen1;
+            }
+            .imagenYPF2{
+                grid-area: imagen2;
+            }
+            .imagenYPF3{
+                grid-area: imagen3;
+            }
+            .imagenYPF4{
+                grid-area: imagen4;
+            }
+            .imagenYPF5{
+                grid-area: imagen5;
+            }
+            .imagenYPF6{
+                grid-area: imagen6;
+            }
+        }
+
+        .grillaYPF2{
+            b{
+                color: #FBE7AA;
+                font-weight: 500;
+            }
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas: "im1 im1 im1 im3 im3 im3 im3 im5 im5 ."
+                                 "im1 im1 im1 im3 im3 im3 im3 im5 im5 ."
+                                 "im1 im1 im1 txt txt txt txt im5 im5 ."
+                                 "im1 im1 im1 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 im4 im4 im4 im4 im7 im7 im7"
+                                 "im2 im2 im2 im4 im4 im4 im4 im7 im7 im7";
+            gap: 1rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .textoYPF{
+                grid-area: txt;
+                padding: 2rem;
+                font-weight: 300;
+                font-size: 0.8rem;
+            }
+            .ypfEstacion1{
+                grid-area: im1;
+            }
+            .ypfEstacion2{
+                grid-area: im2;
+            }
+            .ypfEstacion1691{
+                grid-area: im3;
+            }
+            .ypfEstacion1692{
+                grid-area: im4;
+            }
+            .ypfDispensador1{
+                grid-area: im5;
+            }
+            .ypfDispensador2{
+                grid-area: im6;
+            }
+            .ypfCarteles{
+                grid-area: im7;
+            }
+
+        }
+    }
+
+    hr{
+        color: #f5c126;
+        margin-bottom: 0;
+    }
+
+    .lineaReciclaje{
+        .grillaReciclaje1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas: "im1 im1 im1 im1 im1 im1 im1 .   im2 im2 im3 im3 im4 im4"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   .   .   ttl ttl .   .  "
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im5 im5 im5 im7 im7 im7"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im5 im5 im5 im7 im7 im7"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im6 im6 im6 im7 im7 im7"
+                                 ".   .   .   .   .   .   .   .   im6 im6 im6 im7 im7 im7"
+                                 ".   .   .   .   .   .   .   .   .   .   .   .   .   .  ";
+
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .tituloReciclaje{
+                grid-area: ttl;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }                     
+            .im1{
+                grid-area: im1;
+                height: auto;}
+            .im2{grid-area: im2;}
+            .im3{ grid-area: im3;}
+            .im4{grid-area: im4;}
+            .im5{
+                grid-area: im5;
+                height: auto;
+                align-self: flex-end;}
+            .im6{
+                grid-area: im6;
+                height: auto;
+                align-self: flex-start;}
+            .im7{grid-area: im7;}
+
+            }
+        .textoReciclaje{
+            font-size: 0.9rem;
+            font-weight: 300;
+            b{
+                color: #FBE7AA;
+                font-weight: 500;
+            }
+        }
+        .grillaReciclaje2{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "im1 im2 im5 im5"
+                                 "im3 im4 im5 im5";
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .im1{grid-area: im1;}
+            .im2{grid-area: im2;}
+            .im3{grid-area: im3;}
+            .im4{grid-area: im4;}
+            .im5{grid-area: im5;}
+        }
+
+        }
+
+        
+
 }
 
 
