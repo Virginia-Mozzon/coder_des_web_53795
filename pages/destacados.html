@@ -10,285 +10,245 @@
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> <!--favicon-->
 
         <!--CSS-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
 
     <body>
-        <!--HEADER-->
-        <header>
-            <div class="contenedorHeader">
-                <!--Logo esquina izquierda-->
-                <a class="logoHeader" href="../index.html">
-                    <img class="logoBiMozHeader" src="../assets/img/logo_modo_noche.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
-                </a>
-                
+        <!--HEADER-->    
+        <header class="sticky-top container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!--Logo header-->
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="logoBiMozHeader" src="../assets/img/logo_modo_noche.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
+                    </a>
 
-                <!--Navegación esquina derecha-->
-                <nav class="navegacion">
-                    <ul class="listaNav">
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="./destacados.html">DESTACADOS</a></li>
-                        <li><a href="./mi_arte.html">MI ARTE</a></li>
-                        <li><a href="./servicios.html">SERVICIOS</a></li>
-                        <li><a href="./contactame.html">CONTACTAME</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <!--Navegación esquina derecha-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link m-1" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./destacados.html">DESTACADOS</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./mi_arte.html">MI ARTE</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./servicios.html">SERVICIOS</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./contactame.html">CONTACTAME</a></li>
+                            </li>
+                    </div>
+                </div>
+            </nav>
         </header>  
 
         <!--MAIN-->
-        <main>
+        <main class="container-fluid p-0 mainDestacados">
             <!--Encabezado con logo-->
-            <section>
-                <!--La idea es sumar un video mas de la animacion del logo, para ponerlo de fondo.-->
-                <h1>NO ES MAGIA, ES DISEÑO</h1>
+            <section class="encabezadoDestacados">
+                <h1 class="mb-0">NO ES <span class="bBlanco mx-2"> MAGIA</span>, ES<span class="bNegro mx-2"> DISEÑO</span>.</h1>
             </section>
 
             <!--Proyecto 01: cueros-->
-            <section>
+            <section class="cueros pt-2">
                 <!--Mitad superior-->
-                <div>
-                    <!--Primer bloque de dos imágenes y el título-->
-                    <div>
-                        <!--Primera cartuchera, fondo blanco-->
-                        <img src="../assets/img/cuero_01_cartuchera_fondo_blanco.webp" alt="Fotoproducto de una cartuchera de cuero color marron, con cierre negro, cuadrada semi-rígida, con un fondo blanco texturizado (similar a un fondo pintado con enduído). En su lateral izquierdo, una cremallera de metal plateado y una tira de cuero que une los laterales frontales de la cartuchera. En su lateral derecho, una etiqueta de cuero que sobresale." loading="lazy">
-                        <!--Primera cartuchera, fondo verde-->
-                        <img src="../assets/img/cuero_02_cartuchera_fondo_verde.webp" alt="Fotoproducto de una cartuchera de cuero marrón oscuro visto desde su lateral mas angosto, posicionado en la mitad derecha de la imagen. Tiene costuras claras a la vista, una cremallera negra, y una etiqueta de cuero donde esta grabado el logo de la marca BiMoz (un hexágono negro con perímetro interlineado). En la mitad derecha de la fotografía, el logo de la marca BiMoz en blanco con opacidad en la letra y en el logo. El fondo de la imagen es una pared pintada de verde, con textura pastoza, similar a la de un enduído." loading="lazy">
-                        <h2>CUEROS</h2>
-                    </div>
-                    
-                    <!--Segundo bloque, mochila 01 con silueta de mujer de espaldas-->
-                    <img src="../assets/img/cuero_03_mochila_mujer_espalda.webp" alt="La imagen esta compuesta por la silueta negra de una mujer de espaldas, con una mochila de cuero marrón con negra. De fondo, un living de stock, compuesto de un sillón gris claro, una mesa ratona blanca con un par de revistas y una taza de café blanca por encima, una mesa auxiliar de madera clara con un florero redondo de vidrio y una planta verde fina, y una pared blanca con un piso beige con detalles en marrón. Sobre la pared blanca, el logo de la marca bimoz en un tono gris oscuro." loading="lazy">
-                    
-                    <!--Tercer bloque, mochila sola-->
-                    <div>
-                        <!--Plano general de mochila-->
-                        <img src="../assets/img/cuero_04_mochila_lejos.webp" alt="La imagen es un fotoproducto de una mochila de cuero negra con vista de la espalda. Esta se encuentra apoyada sobre una mesa ratona blanca, y en el fondo podemos ver un sillón gris claro con almohadones estampados con rayas verdes y hojas tropicales. La pared es blanca, y sobre esta se lee el logo de la marca BiMoz con la leyenda: Mochila - Bolso Garrua." loading="lazy">
-                        <!--Plano detalle mochila-->
-                        <img src="../assets/img/cuero_05_mochila_detalle.webp" alt="La imagen representa un plano detalle de una mochila de color negra fabricada con cuero. En el centro, una hebilla de cuero atada con tornillos de metal al cuerpo de la mochila. De la hebilla se desprenden dos argollas de metal de las cuales se unen las hombreras. Y en el centro de la imagen, en un cuero marrón que contrasta con la espalda de la mochila, una etiqueta con el logo de la marca BiMoz. En el fondo, podemos ver una superficie de madera pintada de verde." loading="lazy">
-                    </div>
+                <div class="cuerosGrilla1 m-auto mt-3 mb-3">
+                                        
+                    <!--Primera cartuchera, fondo blanco-->
+                    <img class="imagenCueros1" src="../assets/img/cuero_01_cartuchera_fondo_blanco.webp" alt="Fotoproducto de una cartuchera de cuero color marron, con cierre negro, cuadrada semi-rígida, con un fondo blanco texturizado (similar a un fondo pintado con enduído). En su lateral izquierdo, una cremallera de metal plateado y una tira de cuero que une los laterales frontales de la cartuchera. En su lateral derecho, una etiqueta de cuero que sobresale." loading="lazy">
+                    <!--Primera cartuchera, fondo verde-->
+                    <img class="imagenCueros2" src="../assets/img/cuero_02_cartuchera_fondo_verde.webp" alt="Fotoproducto de una cartuchera de cuero marrón oscuro visto desde su lateral mas angosto, posicionado en la mitad derecha de la imagen. Tiene costuras claras a la vista, una cremallera negra, y una etiqueta de cuero donde esta grabado el logo de la marca BiMoz (un hexágono negro con perímetro interlineado). En la mitad derecha de la fotografía, el logo de la marca BiMoz en blanco con opacidad en la letra y en el logo. El fondo de la imagen es una pared pintada de verde, con textura pastoza, similar a la de un enduído." loading="lazy">
+                    <h2 class="tituloCueros">CUEROS</h2>
+                    <!--Mochila 01 con silueta de mujer de espaldas-->
+                    <img class="imagenCueros3" src="../assets/img/cuero_03_mochila_mujer_espalda.webp" alt="La imagen esta compuesta por la silueta negra de una mujer de espaldas, con una mochila de cuero marrón con negra. De fondo, un living de stock, compuesto de un sillón gris claro, una mesa ratona blanca con un par de revistas y una taza de café blanca por encima, una mesa auxiliar de madera clara con un florero redondo de vidrio y una planta verde fina, y una pared blanca con un piso beige con detalles en marrón. Sobre la pared blanca, el logo de la marca bimoz en un tono gris oscuro." loading="lazy">                    
+                    <!--Plano general de mochila-->
+                    <img class="imagenCueros4" src="../assets/img/cuero_04_mochila_lejos.webp" alt="La imagen es un fotoproducto de una mochila de cuero negra con vista de la espalda. Esta se encuentra apoyada sobre una mesa ratona blanca, y en el fondo podemos ver un sillón gris claro con almohadones estampados con rayas verdes y hojas tropicales. La pared es blanca, y sobre esta se lee el logo de la marca BiMoz con la leyenda: Mochila - Bolso Garrua." loading="lazy">
+                    <!--Plano detalle mochila-->
+                    <img class="imagenCueros5" src="../assets/img/cuero_05_mochila_detalle.webp" alt="La imagen representa un plano detalle de una mochila de color negra fabricada con cuero. En el centro, una hebilla de cuero atada con tornillos de metal al cuerpo de la mochila. De la hebilla se desprenden dos argollas de metal de las cuales se unen las hombreras. Y en el centro de la imagen, en un cuero marrón que contrasta con la espalda de la mochila, una etiqueta con el logo de la marca BiMoz. En el fondo, podemos ver una superficie de madera pintada de verde." loading="lazy">
+                
                 </div>
                 
                 <!--Mitad inferior-->
-                <div>
+                <div class="cuerosGrilla2 m-auto mb-3">
                     <!--Mochila en espalda de muchacho-->
-                    <img src="../assets/img/cuero_06_hombre_mochila.webp" alt="La imagen muestra la silueta negra de un hombre. Sobre él se ve una mochila de cuero de color negra con marrón que contrasta con el negro de la figura humana. En el fondo de la fotografía, una pared blanca sobre la cual se ve el logo de la marca BiMoz en colo marrón claro. También se ve una mesa auxiliar baja de madera clara, con un florero de vidrio esférico y una planta adentro como decoración." loading="lazy">
-                    
-                    <!--Bloque, descripción del proyecto y fotos de cartucheras-->
-                    <div>
-                        <div>
-                            <!--Primera imagen de cartuchera desde tres vistas-->
-                            <img src="../assets/img/cuero_07_cartuchera_3vistas_01.webp" alt="Fotoproducto de una cartuchera de cuero marrón claro desde 3 vistas. La primera, ubicada en la parte superior de la imagen con un tamaño un poco mayor, muestra un lateral angosto donde se observa el final de una cremallera negra y la etiqueta de cuero del producto con el logo de la mara BiMoz. La segunda vista, ubicada en la parte inferior izquierda de la imagen, muestra el largo de la cartuchera desde más arriba. Y la última vista es similar a la primera vista, pero del lado opuesto, dejando ver una tira de cuero que une los laterales de la cartuchera. Estas tres vistas estan ubicadas sobre un fondo blanco texturizado, similar a enduído. Y en la parte superior de la imagen se lee el logo de la marca BiMoz en tonos marrones claros." loading="lazy">
-
-                            <!--Segunda imagen de cartuchera tres vistas-->
-                            <img src="../assets/img/cuero_08_cartuchera_3vistas_02.webp" alt="Fotoproducto de una cartuchera de cuero marrón claro  con detalles en cuero negro desde 3 vistas. La primera, ubicada en la parte superior de la imagen con un tamaño un poco mayor, muestra un lateral angosto donde se observa el final de una cremallera negra y la etiqueta de cuero del producto con el logo de la mara BiMoz. La segunda vista muestra un lateral del producto, con un dibujo en transparencia que representa las tiras de cuero que se pueden agregar para transformar la cartuchera en una riñonera. La última vista, ubicada a una altura intermedia de las otras dos vistas, es la misma cartuchera, pero del otro lateral largo. Estas tres vistas estan ubicadas sobre un fondo blanco texturizado, similar a enduído. Y en la parte superior de la imagen se lee el logo de la marca BiMoz en tonos marrones claros. En la esquina superior derecha se lee la leyenda: NECESER - RIÑONERA 100% Cuero legítimo, 100% Hecho a mano." loading="lazy">
-
-                            <!--Tercer imagen de cartuchera tres vistas-->
-                            <img src="../assets/img/cuero_09_cartuchera_3vistas_03.webp" alt="Fotoproducto de una cartuchera de cuero marrón oscuro desde 3 vistas. La primera, ubicada en la parte superior de la imagen con un tamaño un poco mayor, muestra un lateral angosto donde se observa el final de una cremallera negra, dejando ver una tira de cuero que une los laterales de la cartuchera. La segunda vista muestra un lateral del producto, con un dibujo en transparencia que representa las tiras de cuero que se pueden agregar para transformar la cartuchera en una riñonera. Y la última vista es similar a la segunda vista, pero del lado opuesto, dejando ver una etiqueta de cuero con el logo de la marca BiMoz. Estas tres vistas estan ubicadas sobre un fondo blanco texturizado, similar a enduído. Y en la parte superior de la imagen se lee el logo de la marca BiMoz en tonos marrones claros. En la esquina superior derecha se lee la leyenda: NECESER - RIÑONERA 100% Cuero legítimo, 100% Hecho a mano." loading="lazy">
-                        </div>
-
-                        <!--Descripción del proyecto-->
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                    <img class="imagenCueros6" src="../assets/img/cuero_06_hombre_mochila.webp" alt="La imagen muestra la silueta negra de un hombre. Sobre él se ve una mochila de cuero de color negra con marrón que contrasta con el negro de la figura humana. En el fondo de la fotografía, una pared blanca sobre la cual se ve el logo de la marca BiMoz en colo marrón claro. También se ve una mesa auxiliar baja de madera clara, con un florero de vidrio esférico y una planta adentro como decoración." loading="lazy">
+                    <!--Primera imagen de cartuchera desde tres vistas-->
+                    <img class="imagenCueros7" src="../assets/img/cuero_07_cartuchera_3vistas_01.webp" alt="Fotoproducto de una cartuchera de cuero marrón claro desde 3 vistas. La primera, ubicada en la parte superior de la imagen con un tamaño un poco mayor, muestra un lateral angosto donde se observa el final de una cremallera negra y la etiqueta de cuero del producto con el logo de la mara BiMoz. La segunda vista, ubicada en la parte inferior izquierda de la imagen, muestra el largo de la cartuchera desde más arriba. Y la última vista es similar a la primera vista, pero del lado opuesto, dejando ver una tira de cuero que une los laterales de la cartuchera. Estas tres vistas estan ubicadas sobre un fondo blanco texturizado, similar a enduído. Y en la parte superior de la imagen se lee el logo de la marca BiMoz en tonos marrones claros." loading="lazy">
+                    <!--Segunda imagen de cartuchera tres vistas-->
+                    <img class="imagenCueros8" src="../assets/img/cuero_08_cartuchera_3vistas_02.webp" alt="Fotoproducto de una cartuchera de cuero marrón claro  con detalles en cuero negro desde 3 vistas. La primera, ubicada en la parte superior de la imagen con un tamaño un poco mayor, muestra un lateral angosto donde se observa el final de una cremallera negra y la etiqueta de cuero del producto con el logo de la mara BiMoz. La segunda vista muestra un lateral del producto, con un dibujo en transparencia que representa las tiras de cuero que se pueden agregar para transformar la cartuchera en una riñonera. La última vista, ubicada a una altura intermedia de las otras dos vistas, es la misma cartuchera, pero del otro lateral largo. Estas tres vistas estan ubicadas sobre un fondo blanco texturizado, similar a enduído. Y en la parte superior de la imagen se lee el logo de la marca BiMoz en tonos marrones claros. En la esquina superior derecha se lee la leyenda: NECESER - RIÑONERA 100% Cuero legítimo, 100% Hecho a mano." loading="lazy">
+                    <!--Tercer imagen de cartuchera tres vistas-->
+                    <img class="imagenCueros9" src="../assets/img/cuero_09_cartuchera_3vistas_03.webp" alt="Fotoproducto de una cartuchera de cuero marrón oscuro desde 3 vistas. La primera, ubicada en la parte superior de la imagen con un tamaño un poco mayor, muestra un lateral angosto donde se observa el final de una cremallera negra, dejando ver una tira de cuero que une los laterales de la cartuchera. La segunda vista muestra un lateral del producto, con un dibujo en transparencia que representa las tiras de cuero que se pueden agregar para transformar la cartuchera en una riñonera. Y la última vista es similar a la segunda vista, pero del lado opuesto, dejando ver una etiqueta de cuero con el logo de la marca BiMoz. Estas tres vistas estan ubicadas sobre un fondo blanco texturizado, similar a enduído. Y en la parte superior de la imagen se lee el logo de la marca BiMoz en tonos marrones claros. En la esquina superior derecha se lee la leyenda: NECESER - RIÑONERA 100% Cuero legítimo, 100% Hecho a mano." loading="lazy">
+                
+                    <!--Descripción del proyecto-->
+                    <div class="textoCueros">
+                        <p>Inicié esta línea de productos en el <b>año 2019</b>. Cuando comencé a diseñar estas piezas, mi objetivo era fusionar la tradición del <b>trabajo artesanal en cuero</b> con un enfoque <b>moderno y fresco</b>. Quería crear productos que fueran tanto <b>funcionales como estéticamente impactantes</b>, y creo que lo he logrado.</p>
+                        <p>Cada cartera y mochila, cada riñonera y cartuchera fue pensada y diseñada en un principio, para ser cuidadosamente <b>confeccionada a mano</b>. Desde el corte del cuero hasta el cosido final, cada paso se realiza con atención al detalle y amor por el diseño.</p>
+                        <p>El enfoque principal de esta línea es la <b>versatilidad y practicidad</b> de cada producto. Hasta hoy en día, sigo en <b>generación constante de nuevas piezas</b> que formen parte de esta línea.</p>
                     </div>
 
                     <!--Mochila como cartera en silueta negra de mujer-->
-                    <img src="../assets/img/cuero_10_mujer_mochila_cartera.webp" alt="La imagen esta compuesta por la silueta negra de una mujer con el pelo recogido, con una cartera de cuero marrón con negro. De fondo, un living de stock, compuesto de un sillón gris claro, una mesa ratona blanca con un par de revistas y una taza de café blanca por encima, una mesa auxiliar de madera clara con un florero redondo de vidrio y una planta verde fina, y una pared blanca con un piso beige con detalles en marrón. Sobre la pared blanca, el logo de la marca bimoz en un tono gris oscuro." loading="lazy">
+                    <img class="imagenCueros10" src="../assets/img/cuero_10_mujer_mochila_cartera.webp" alt="La imagen esta compuesta por la silueta negra de una mujer con el pelo recogido, con una cartera de cuero marrón con negro. De fondo, un living de stock, compuesto de un sillón gris claro, una mesa ratona blanca con un par de revistas y una taza de café blanca por encima, una mesa auxiliar de madera clara con un florero redondo de vidrio y una planta verde fina, y una pared blanca con un piso beige con detalles en marrón. Sobre la pared blanca, el logo de la marca bimoz en un tono gris oscuro." loading="lazy">
                 </div>
             </section>
 
             <!--Proyecto 02: YPF-->
-            <section>
+            <section class="ypf">
                 <!--Primer bloque: guarda de cuatro fotos-->
-                <div>
+                <div class="d-flex justify-content-center m-auto guardaYPF1">
                     <!--Tacho de basura renderizado: dos imágenes-->
-                    <img src="../assets/img/ypf_01_guarda01.webp" alt="La imagen esta compuesta de dos imágenes renderizadas de un mismo producto desde dos vistas. La de la izquierda es un tacho de basura compuesto de tres modulos con un lateral con solapa que se lee la leyenda Residuos. La imagen de la derecha es ese mismo tacho, pero del lateral opuesto, dejando ver varios compartimientos que lo componen. Ambos estan ubicados sobre un fondo blanco, son de color crema y tienen detalles tanto en la parte superior como inferior en tonos oscuros." loading="lazy">
+                    <img class="ypfBanda" src="../assets/img/ypf_01_guarda01.webp" alt="La imagen esta compuesta de dos imágenes renderizadas de un mismo producto desde dos vistas. La de la izquierda es un tacho de basura compuesto de tres modulos con un lateral con solapa que se lee la leyenda Residuos. La imagen de la derecha es ese mismo tacho, pero del lateral opuesto, dejando ver varios compartimientos que lo componen. Ambos estan ubicados sobre un fondo blanco, son de color crema y tienen detalles tanto en la parte superior como inferior en tonos oscuros." loading="lazy">
 
                     <!--Tacho de basura separado en 3 bloques-->
-                    <img src="../assets/img/ypf_02_guarda02.webp" alt="La imagen es una renderización de un diseño para tacho de basura para una estación de servicio, compuesto de tres modulos que se representan separados, dispuestos sobre una diagonal en un fondo blanco. El primer módulo contiene una solapa negra con la leyenda residuos. El segundo modulo es rectangular, y contiene un dispenser de toallas de papel. El tercer módulo tiene una base angosta y una superficie más ancha." loading="lazy">
+                    <img class="ypfBanda" src="../assets/img/ypf_02_guarda02.webp" alt="La imagen es una renderización de un diseño para tacho de basura para una estación de servicio, compuesto de tres modulos que se representan separados, dispuestos sobre una diagonal en un fondo blanco. El primer módulo contiene una solapa negra con la leyenda residuos. El segundo modulo es rectangular, y contiene un dispenser de toallas de papel. El tercer módulo tiene una base angosta y una superficie más ancha." loading="lazy">
 
                     <!-- Tacho de basura, desarrollo de producto-->
-                    <img src="../assets/img/ypf_03_guarda.webp" alt="Renderizado de un producto dividido en dos partes. Por un lado, una carcasa negra que representa la parte trasera del objeto. Por el otro lado, una carcasa gris con una superficie amplia y una base fina que soporta el cuerpo. De cada componente salen carteles explicativos de los elementos." loading="lazy">
+                    <img class="ypfBanda" src="../assets/img/ypf_03_guarda.webp" alt="Renderizado de un producto dividido en dos partes. Por un lado, una carcasa negra que representa la parte trasera del objeto. Por el otro lado, una carcasa gris con una superficie amplia y una base fina que soporta el cuerpo. De cada componente salen carteles explicativos de los elementos." loading="lazy">
 
                     <!--Descomposición de un cartel de estación de servicio móvil-->
-                    <img src="../assets/img/ypf_04_guarda.webp" alt="La imagen muestra un análisis de producto de un cartel de estación de servicio móvil con la indicación de prohibido fumar. Contiene una base redonda de metal plateado, y de su centro sale un palo del mismo material que en su tope se transforma en el perimetro de un rectángulo. Allí se encastran los carteles, pero en la imágen los carteles están separados, pero en el mismo ángulo, para mostrar la idea del producto. Debajo de la base redonda, se muestra como un aro de metal. Del aro de metal, como del palo que sale de la base del cartel, como de los carteles de prohibido fumar, salen lineas negras que conectan a 3 grandes rectángulos con información en detalle de cada pieza del producto." loading="lazy">
+                    <img class="ypfBanda" src="../assets/img/ypf_04_guarda.webp" alt="La imagen muestra un análisis de producto de un cartel de estación de servicio móvil con la indicación de prohibido fumar. Contiene una base redonda de metal plateado, y de su centro sale un palo del mismo material que en su tope se transforma en el perimetro de un rectángulo. Allí se encastran los carteles, pero en la imágen los carteles están separados, pero en el mismo ángulo, para mostrar la idea del producto. Debajo de la base redonda, se muestra como un aro de metal. Del aro de metal, como del palo que sale de la base del cartel, como de los carteles de prohibido fumar, salen lineas negras que conectan a 3 grandes rectángulos con información en detalle de cada pieza del producto." loading="lazy">
                 </div>
 
                 <!--Segundo bloque: Nafta depositos + titulo ypf-->
-                <div>
+                <div class="grillaYPF1 m-auto">
                     <!--Render depósito nafta-->
-                    <img src="../assets/img/ypf_05_render_deposito_nafta.webp" alt="La imagen representa un render de un depósito de gasolina hecho con metales plateados con detalles en azul. Contiene 4 surtidores con cables negros largos que cuelgan de la parte superior del dispenser. En el borde izquierdo del depósito, una serie de carteles en gris con indicaciones sobre lo permitido y prohibido en la estación. En el borde derecho, un único cartel con un expositor de botellas de gasoil. Y en el lateral izquierdo, un cartel incrustado en el cuerpo del deposito, con la leyenda 'EURO'." loading="lazy">
+                    <img class="imagenYPF1" src="../assets/img/ypf_05_render_deposito_nafta.webp" alt="La imagen representa un render de un depósito de gasolina hecho con metales plateados con detalles en azul. Contiene 4 surtidores con cables negros largos que cuelgan de la parte superior del dispenser. En el borde izquierdo del depósito, una serie de carteles en gris con indicaciones sobre lo permitido y prohibido en la estación. En el borde derecho, un único cartel con un expositor de botellas de gasoil. Y en el lateral izquierdo, un cartel incrustado en el cuerpo del deposito, con la leyenda 'EURO'." loading="lazy">
 
-                    <!--Bloque guarda fotos + YPF-->
-                    <div>
-                        <!--Imágenes-->
-                        <div>
-                            <!--Primer rueda expositora productos-->
-                            <img src="../assets/img/ypf_06_rueda01.webp" alt="Renderizado de una rueda negra visto de perfil, similar a la llanta de un automóvil. En los huecos de la rueda, una serie de frascos de colores, funcionando así como un expositor de productos." loading="lazy">
+                    <!--Primer rueda expositora productos-->
+                    <img class="imagenYPF2" src="../assets/img/ypf_06_rueda01.webp" alt="Renderizado de una rueda negra visto de perfil, similar a la llanta de un automóvil. En los huecos de la rueda, una serie de frascos de colores, funcionando así como un expositor de productos." loading="lazy">
 
-                            <!--Segunda rueda expositora productos-->
-                            <img src="../assets/img/ypf_07_rueda02.webp" alt="Renderizado de una rueda negra visto de frente, similar a la llanta de un automóvil. En los huecos de la rueda, una serie de frascos de colores, funcionando así como un expositor de productos." loading="lazy">
+                    <!--Segunda rueda expositora productos-->
+                    <img class="imagenYPF3" src="../assets/img/ypf_07_rueda02.webp" alt="Renderizado de una rueda negra visto de frente, similar a la llanta de un automóvil. En los huecos de la rueda, una serie de frascos de colores, funcionando así como un expositor de productos." loading="lazy">
 
-                            <!--Tercer rueda expositora productos-->
-                            <img src="../assets/img/ypf_08_rueda03.webp" alt="Renderizado de una rueda negra visto de costado, similar a la llanta de un automóvil. En los huecos de la rueda, una serie de frascos de colores, funcionando así como un expositor de productos." loading="lazy">
-                        </div>
-                        <h2>YPF</h2>
-                    </div>
+                    <!--Tercer rueda expositora productos-->
+                    <img class="imagenYPF4" src="../assets/img/ypf_08_rueda03.webp" alt="Renderizado de una rueda negra visto de costado, similar a la llanta de un automóvil. En los huecos de la rueda, una serie de frascos de colores, funcionando así como un expositor de productos." loading="lazy">
+                
+                    <h2 class="tituloYPF">YPF</h2>
 
-                    <!--Bloque dispensador productos 2-->
-                    <div>
-                        <!--Dispensador producto vista frontal-->
-                        <img src="../assets/img/ypf_09_productos01.webp" alt="La imagen es un render de un expositor de productos de automotores desde una vista frontal. Muestra un rectángulo alto recubierto por una tapa de acrílico transparente, que muestra un expositor de distintos productos, desde frascos de gasoil hasta aerosoles. Es de color negro, y los productos tienen envases en tonos grises con etiquetas y tapas de colores llamativos. El findo de la imagen es blanco." loading="lazy">
+                    <!--Dispensador producto vista frontal-->
+                    <img class="imagenYPF5" src="../assets/img/ypf_09_productos01.webp" alt="La imagen es un render de un expositor de productos de automotores desde una vista frontal. Muestra un rectángulo alto recubierto por una tapa de acrílico transparente, que muestra un expositor de distintos productos, desde frascos de gasoil hasta aerosoles. Es de color negro, y los productos tienen envases en tonos grises con etiquetas y tapas de colores llamativos. El findo de la imagen es blanco." loading="lazy">
 
-                        <!--Dispensador producto vista lateral-->
-                        <img src="../assets/img/ypf_10_productos02.webp" alt="La imagen es un render de un expositor de productos de automotores desde una vista lateral. Muestra un rectángulo alto recubierto por una tapa de acrílico transparente, que muestra un expositor de distintos productos, desde frascos de gasoil hasta aerosoles. Es de color negro, y los productos tienen envases en tonos grises con etiquetas y tapas de colores llamativos. El findo de la imagen es blanco." loading="lazy">
-                    </div>
-
+                    <!--Dispensador producto vista lateral-->
+                    <img class="imagenYPF6" src="../assets/img/ypf_10_productos02.webp" alt="La imagen es un render de un expositor de productos de automotores desde una vista lateral. Muestra un rectángulo alto recubierto por una tapa de acrílico transparente, que muestra un expositor de distintos productos, desde frascos de gasoil hasta aerosoles. Es de color negro, y los productos tienen envases en tonos grises con etiquetas y tapas de colores llamativos. El findo de la imagen es blanco." loading="lazy">
+                
                 </div>
 
                 <!--Tercer bloque: Diseño de estación de servicio-->
-                <div>
+                <div class="grillaYPF2 m-auto">
+                    
                     <!--Estacion de servicio YPF render 4:3-->
-                    <div>
-                        <img src="../assets/img/ypf_11_estacion01.webp" alt="La imagen es una rederización de una estación de servicio de la marca YPF, en un atardecer desde una vista isométrica. Esta compuesta de colunas y techos blancos, con esquinas cuadradas grises. En el prente, un poste muy alto del cual sale, como una bandera rígida, un cartel luminoso azul con la marca YPF.Dentro de la estación podemos ver varios dispensadores de gasoil, un local tipo kisko con la leyenda 'full' en su entrada, y varios autos estacionados." loading="lazy">
-                        <img src="../assets/img/ypf_12_estacion02.webp" alt="La imagen es una rederización de una estación de servicio de la marca YPF, en un atardecer desde una vista isométrica. Esta compuesta de colunas y techos blancos, con esquinas cuadradas grises. En el prente, un poste muy alto del cual sale, como una bandera rígida, un cartel luminoso azul con la marca YPF.Dentro de la estación podemos ver varios dispensadores de gasoil, un local tipo kisko con la leyenda 'full' en su entrada, y varios autos estacionados." loading="lazy">
+                    <img class="ypfEstacion1" src="../assets/img/ypf_11_estacion01.webp" alt="La imagen es una rederización de una estación de servicio de la marca YPF, en un atardecer desde una vista isométrica. Esta compuesta de colunas y techos blancos, con esquinas cuadradas grises. En el prente, un poste muy alto del cual sale, como una bandera rígida, un cartel luminoso azul con la marca YPF.Dentro de la estación podemos ver varios dispensadores de gasoil, un local tipo kisko con la leyenda 'full' en su entrada, y varios autos estacionados." loading="lazy">
+                    <img class="ypfEstacion2" src="../assets/img/ypf_12_estacion02.webp" alt="La imagen es una rederización de una estación de servicio de la marca YPF, en un atardecer desde una vista isométrica. Esta compuesta de colunas y techos blancos, con esquinas cuadradas grises. En el prente, un poste muy alto del cual sale, como una bandera rígida, un cartel luminoso azul con la marca YPF.Dentro de la estación podemos ver varios dispensadores de gasoil, un local tipo kisko con la leyenda 'full' en su entrada, y varios autos estacionados." loading="lazy">
+                    <!--Estacion de servicio YPF render 16:9-->
+                    <img class="ypfEstacion1691" src="../assets/img/ypf_13_estacion03.jpg" alt="Renderizado de una estación de servicio YPF. En primer plano, unos depósitos de nafta rectangulares plateados con detalles en azul y cuatro dispensadores con mangeras negras que salen del techo de los depósitos. Detrás del primer surtidor, un auto gris que carga nafta. Las columnas que se encuentran al lado de los depositos son delgadas, blancas y con una inclinación recta en su parte superior. En el fondo, un edificio con ventanales de vidrio grandes unidos entre si, con forma de rombos. En el extremo derecho, un arbol blanco, y tres personas a lo lejos paradas." loading="lazy">
+                    <div class="textoYPF">
+                        <p>Como diseñadora, formar parte en el <b>año 2010</b> del equipo la creación de la <b>estética integral de YPF </b>en Argentina ha sido una experiencia increíblemente gratificante y desafiante. Desde el primer día, nos propusimos no solo <b>renovar la imagen</b> de las estaciones, sino también crear un ambiente que reflejara la <b>modernidad y la calidad</b> que caracterizan a la marca.</p>
+                        <p>Desde la renovación del <b>diseño de los carteles</b> que identificarían las estaciones de servicio, hasta el desarrollo de los <b>dispensadores de nafta</b>, pensamos en un diseño innovador y funcional, que integrara las mayores medidas de seguridad en conjunto con una estética armoniosa. </p>
+                        <p>Desde la <b>concepción de la idea</b>, hasta la <b>producción y colocación final</b>, tuve la fortuna de formar parte activamente. Cada paso del camino ha sido emocionante, y estoy orgullosa de haber participado de este proyecto de forma integral.</p>
                     </div>
-
-                    <!--Estacion de servicio YPF render 16:9 + descripcion del proyecto-->
-                    <div>
-                        <img src="../assets/img/ypf_13_estacion03.jpg" alt="Renderizado de una estación de servicio YPF. En primer plano, unos depósitos de nafta rectangulares plateados con detalles en azul y cuatro dispensadores con mangeras negras que salen del techo de los depósitos. Detrás del primer surtidor, un auto gris que carga nafta. Las columnas que se encuentran al lado de los depositos son delgadas, blancas y con una inclinación recta en su parte superior. En el fondo, un edificio con ventanales de vidrio grandes unidos entre si, con forma de rombos. En el extremo derecho, un arbol blanco, y tres personas a lo lejos paradas." loading="lazy">
-
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-
-                        <img src="../assets/img/ypf_14_estacion04.jpg" alt="Renderizado de una estación de servicio moderna desde una vista lateral. A la izquierda, un auto gris estacionado bajo un techo flotante blanco sostenido por dos columnas finas blancas. Detras de las columnas, un edificio con ventanales en forma de rombo que cubren toda la pared. En el fondo se ven algunas personas caminando por la estación. En el medio de la fotografía, la entrada al edificio con un cartel redondo naranja y luminoso por encima de la puerta con la leyenda 'full'. Y en el lateral izquierdo, algunos autos estacionados y otro techo blanco con detalles en celeste y columnas blancas que lo sostienen que cubre una serie de dispensadores de gasolina." loading="lazy">
-                    </div>
-
-                    <!--Dispensadores de nafta y carteles-->
-                    <div>
-                        <!--Estacion de servicio render-->
-                        <img src="../assets/img/ypf_15_dispenador01.webp" alt="La imagen es una renderización de un dispensador de gasoil con vista desde el frente. Un auto gris sin patente se ubica del lado derecho de esta. El dispensador contiene una pantalla con publicidad en el medio, y debajo de esta una serie de cajones y ranuras, todos en tonos grises. En el lateral izquierdo del depósito, una sección con una computadora y algunos surtidores. El auto se encuentra por encima de una rampa negra, con fricción en su superficie y una especie de vereda elevada que sirve como guía." loading="lazy">
-                        <img src="../assets/img/ypf_16_dispensador02.webp" alt="La imagen es una renderización de un dispensador de gasoil con vista desde la parte lateral trasera. Un auto gris sin patente se ubica del lado derecho de esta. El dispensador contiene una pantalla con publicidad en el medio, y debajo de esta una serie de cajones y ranuras, todos en tonos grises. En el lateral izquierdo del depósito, una sección con una computadora y algunos surtidores. El auto se encuentra por encima de una rampa negra, con fricción en su superficie y una especie de vereda elevada que sirve como guía." loading="lazy">
-                        
-                        <!--Carteles estacion de servicio-->
-                        <img src="../assets/img/ypf_17_carteles.webp" alt="La imagen es la renderización de 3 carteles de una estación de servicio. El primer cartel, ubicado en el lateral izquierdo, contiene un marco de metal con números blancos sobre un fondo negro, en información en franjas grises en la parte inferior. El cartel se sostiene por una base negra de metal, y tiene una carcasa azul en su parte trasera. El segundo cartel, ubicado en el centro de la imagen, es similar al primer cartel, pero es más alto, y con una extensión en su parte superior de color azul que incluye información como tipos de nafta, y un cartel naranja con la leyenda 'Full'. El ultimo cartel, es una version más pequeña de los otros dos carteles, que en su parte superior contiene una franja naranja con la leyenda 'GNC', y en el fondo negro contiene una única línea de información con un único precio. Los tres carteles se posicionan sobre un fondo blanco." loading="lazy">
-                    </div>
+                    <!--Estacion de servicio YPF render 16:9-->
+                    <img class="ypfEstacion1692" src="../assets/img/ypf_14_estacion04.jpg" alt="Renderizado de una estación de servicio moderna desde una vista lateral. A la izquierda, un auto gris estacionado bajo un techo flotante blanco sostenido por dos columnas finas blancas. Detras de las columnas, un edificio con ventanales en forma de rombo que cubren toda la pared. En el fondo se ven algunas personas caminando por la estación. En el medio de la fotografía, la entrada al edificio con un cartel redondo naranja y luminoso por encima de la puerta con la leyenda 'full'. Y en el lateral izquierdo, algunos autos estacionados y otro techo blanco con detalles en celeste y columnas blancas que lo sostienen que cubre una serie de dispensadores de gasolina." loading="lazy">                    
+                    <!--Dispensadores de nafta render-->
+                    <img class="ypfDispensador1" src="../assets/img/ypf_15_dispenador01.webp" alt="La imagen es una renderización de un dispensador de gasoil con vista desde el frente. Un auto gris sin patente se ubica del lado derecho de esta. El dispensador contiene una pantalla con publicidad en el medio, y debajo de esta una serie de cajones y ranuras, todos en tonos grises. En el lateral izquierdo del depósito, una sección con una computadora y algunos surtidores. El auto se encuentra por encima de una rampa negra, con fricción en su superficie y una especie de vereda elevada que sirve como guía." loading="lazy">
+                    <img class="ypfDispensador2" src="../assets/img/ypf_16_dispensador02.webp" alt="La imagen es una renderización de un dispensador de gasoil con vista desde la parte lateral trasera. Un auto gris sin patente se ubica del lado derecho de esta. El dispensador contiene una pantalla con publicidad en el medio, y debajo de esta una serie de cajones y ranuras, todos en tonos grises. En el lateral izquierdo del depósito, una sección con una computadora y algunos surtidores. El auto se encuentra por encima de una rampa negra, con fricción en su superficie y una especie de vereda elevada que sirve como guía." loading="lazy">
+                    <!--Carteles estacion de servicio-->
+                    <img class="ypfCarteles" src="../assets/img/ypf_17_carteles.webp" alt="La imagen es la renderización de 3 carteles de una estación de servicio. El primer cartel, ubicado en el lateral izquierdo, contiene un marco de metal con números blancos sobre un fondo negro, en información en franjas grises en la parte inferior. El cartel se sostiene por una base negra de metal, y tiene una carcasa azul en su parte trasera. El segundo cartel, ubicado en el centro de la imagen, es similar al primer cartel, pero es más alto, y con una extensión en su parte superior de color azul que incluye información como tipos de nafta, y un cartel naranja con la leyenda 'Full'. El ultimo cartel, es una version más pequeña de los otros dos carteles, que en su parte superior contiene una franja naranja con la leyenda 'GNC', y en el fondo negro contiene una única línea de información con un único precio. Los tres carteles se posicionan sobre un fondo blanco." loading="lazy">
+                    
                 </div>
             </section>
 
+            <hr class="solid p-3">
+
             <!--Proyecto 03: RECICLAJE-->
-            <section>
-                <!--Bloque cartera verde + titulo + cartera roja-->
-                <div>
+            <section class="lineaReciclaje">
+                
+                <div class="grillaReciclaje1 m-auto mt-0 pt-0">
+
                     <!--Fotografía cenital cartera verde-->
-                    <img src="../assets/img/reciclaje_01_cartera_verde01.webp" alt="Una fotografia de frente de un bolso con forma trapezoidal, color negro hecho con neumatico reciclado. Tiene costuras a la vista y detalles de pintura con franjas amarilla y tres verdes. Posee un bolsillo delantero con botón, la correa tiene unas tachas gruesas color bronce y tiene distintos agujeros decorativos, similar a un cinturón de pantalón." loading="lazy">
+                    <img class="im1" src="../assets/img/reciclaje_01_cartera_verde01.webp" alt="Una fotografia de frente de un bolso con forma trapezoidal, color negro hecho con neumatico reciclado. Tiene costuras a la vista y detalles de pintura con franjas amarilla y tres verdes. Posee un bolsillo delantero con botón, la correa tiene unas tachas gruesas color bronce y tiene distintos agujeros decorativos, similar a un cinturón de pantalón." loading="lazy">
+                    <!--Plano detalle del logo en cartera verde-->
+                    <img class="im2" src="../assets/img/reciclaje_02_cartera_verde02.webp" alt="Fotografía muy cercana del bolsillo del bolso, se aprecia la solapa del bolsillo, el botón dorado, la etiqueta con el nombre de la diseñadora 'bimoz' y el detalle de pintura hecho a mano de las franjas de colores amarillo y verdes." loading="lazy">
+                    <!--Plano detalle lateral parte inferior cartera verde-->
+                    <img class="im3" src="../assets/img/reciclaje_03_cartera_verde03.webp" alt="Fotografía muy cercana del bolso que muestra las costuras que unen el bolsillo delantero al cuerpo del bolso. Se aprecian las franjas de colores, una amarilla y otra verde. El bolso hecho de neumático tiene textura lisa, suave y brillante. Además, se puede ver la textura como de lienzo/tela que posee la parte pintada a mano de la solapa inferior." loading="lazy">
+                    <!--Plano detalle frente parte inferior cartera verde-->
+                    <img class="im4" src="../assets/img/reciclaje_04_cartera_verde04.webp" alt="Vista superior de un bolso hecho de caucho reciclado de neumático.Tiene una zona de pintura en su parte inferior, compuesta por franjas verdes y amarillas intercaladas pintadas a mano. La textura del bolso es suave y brillante, y tiene una textura como de lienzo en la parte inferior." loading="lazy">
+
+                    <h2 class="tituloReciclaje">RECICLAJE</h2>
                     
-                    <div>
-                        <!--Imágenes cartera verde-->
-                        <div>
-                            <!--Plano detalle del logo en cartera verde-->
-                            <img src="../assets/img/reciclaje_02_cartera_verde02.webp" alt="Fotografía muy cercana del bolsillo del bolso, se aprecia la solapa del bolsillo, el botón dorado, la etiqueta con el nombre de la diseñadora 'bimoz' y el detalle de pintura hecho a mano de las franjas de colores amarillo y verdes." loading="lazy">
+                    <!--Billetera cerrada-->
+                    <img class="im5" src="../assets/img/reciclaje_05_billetera_sincolor.webp" alt="Una fotografia cenital de frente de una billetera hecho con neumatico reciclado color negro natural. El estuche se encuentra cerrado, se aprecian las costuras naranjas, y el boton metalizado en el frente, sobre la solapa de apertura." loading="lazy">
+                    <!--Billetera abierta-->
+                    <img class="im6" src="../assets/img/reciclaje_06_billetera_abierta.webp" alt="Una fotografía cenital de frente de un estuche hecho con neumático reciclado. El modelo tiene una solapa de corte ovalado. Vemos el interior del estuche, donde hay otra sección estilo billetera. Esta sección tiene un gran sector hecho con un tajo recto y terminaciones con perforaciones redondeadas para colocar billetes y un sector tarjetero con tres tajos del mismo estilo, tajos rectos con terminaciones redondeadas." loading="lazy">
+                    <!--Imagen billetera roja-->
+                    <img class="im7" src="../assets/img/reciclaje_07_billetera_roja.webp" alt="Una fotografía de una parte de un estuche o billetera hecho con neumático reciclado y detalles de pintura. En la foto se aprecian las costuras color naranja sobre el neumatico negro natural. En la solapa, estan pintadas a mano unas franjas irregulares de color rojo, naranja, amarillo ocupando toda la solapa. Se aprecian los botones metalizados, la parte hembra en la solapa, y la parte macho en el cuerpo del estuche." loading="lazy">
 
-                            <!--Plano detalle lateral parte inferior cartera verde-->
-                            <img src="../assets/img/reciclaje_03_cartera_verde03.webp" alt="Fotografía muy cercana del bolso que muestra las costuras que unen el bolsillo delantero al cuerpo del bolso. Se aprecian las franjas de colores, una amarilla y otra verde. El bolso hecho de neumático tiene textura lisa, suave y brillante. Además, se puede ver la textura como de lienzo/tela que posee la parte pintada a mano de la solapa inferior." loading="lazy">
+                </div>
+                     
+                <div class="d-flex justify-content-between align-items-center w-100 mt-3">
+                    <!--Fotografía estuche con detalle de marca-->
+                    <img class="im8 w-50 h-auto" src="../assets/img/reciclaje_08_estuche.webp" alt="Una fotografía detallada de la parte delantera de un estuche de lentes hecho con neumático reciclado. La textura del estuche es rugosa y opaca y las costuras a mano. La solapa está abierta y tiene un corte redondeado en su interior. Se aprecia que en la parte trasera hay un pequeño bolsillo, además de la etiqueta beige con el nombre de la marca BiMoz, unida a través de unas tachas huecas color bronce." loading="lazy">
 
-                            <!--Plano detalle frente parte inferior cartera verde-->
-                            <img src="../assets/img/reciclaje_04_cartera_verde04.webp" alt="Vista superior de un bolso hecho de caucho reciclado de neumático.Tiene una zona de pintura en su parte inferior, compuesta por franjas verdes y amarillas intercaladas pintadas a mano. La textura del bolso es suave y brillante, y tiene una textura como de lienzo en la parte inferior." loading="lazy">
-                        </div>
-
-                        <h2>RECICLAJE</h2>
-                        
-                        <!--Imágenes billetera roja-->
-                        <div>
-                            <!--Billetera cerrada. Dos fotografías.-->
-                            <div>
-                                <!--Billetera cerrada-->
-                                <img src="../assets/img/reciclaje_05_billetera_sincolor.webp" alt="Una fotografia cenital de frente de una billetera hecho con neumatico reciclado color negro natural. El estuche se encuentra cerrado, se aprecian las costuras naranjas, y el boton metalizado en el frente, sobre la solapa de apertura." loading="lazy">
-        
-                                <!--Billetera abierta-->
-                                <img src="../assets/img/reciclaje_06_billetera_abierta.webp" alt="Una fotografía cenital de frente de un estuche hecho con neumático reciclado. El modelo tiene una solapa de corte ovalado. Vemos el interior del estuche, donde hay otra sección estilo billetera. Esta sección tiene un gran sector hecho con un tajo recto y terminaciones con perforaciones redondeadas para colocar billetes y un sector tarjetero con tres tajos del mismo estilo, tajos rectos con terminaciones redondeadas." loading="lazy">
-                            </div>
-                            
-                            <img src="../assets/img/reciclaje_07_billetera_roja.webp" alt="Una fotografía de una parte de un estuche o billetera hecho con neumático reciclado y detalles de pintura. En la foto se aprecian las costuras color naranja sobre el neumatico negro natural. En la solapa, estan pintadas a mano unas franjas irregulares de color rojo, naranja, amarillo ocupando toda la solapa. Se aprecian los botones metalizados, la parte hembra en la solapa, y la parte macho en el cuerpo del estuche." loading="lazy">
-                        </div>
-
-
+                    <div class="textoReciclaje w-50 p-5">
+                        <p>La cantidad de residuos que generamos y los desperdicios que tardan <b>millones de años en degradarse</b> es inmensa. Con los años de desarrollo profesional, traté de dar siempre el mejor enfoque desde una <b>perspectiva de reciclaje</b>. Y el <b>caucho</b> fue un descubrimiento enorme como tipo de material para la realización de productos.</p>
+                        <p>Este material no solo es <b>duradero y resistente al agua</b>, sino que también ayuda a reducir la cantidad de desechos plásticos en el medio ambiente, ¡una verdadera victoria para la sostenibilidad! Grandes empresas de neumáticos y de automovilismo tiran millones de recortes y desechos de caucho fallado, dando a nosotros la oportunidad de poder ser reutilizados.</p>
+                        <p>Con esta línea de productos, no sólo busqué generar una <b>mayor vida útil</b> para un elemento de dificil reciclaje, sino que además genere un <b>diseño de gran versatilidad</b>, donde un mismo elemento puede tener múltiples funciones: una cartera que funciona como riñonera o billetera. Mi toque personal: pintura que da color al material y forma parte de su estética.</p>
                     </div>
+                </div>
+
+                <div class="grillaReciclaje2 w-75 m-auto">
+                    <!--Estuche de lentes-->
+                    <img class="im1" src="../assets/img/reciclaje_09_estuche.webp" alt="Una fotografía frontal de un estuche de lentes hecho con neumático reciclado. La textura del estuche es rugosa y opaca y las costuras están hechas a mano. La parte principal del estuche tiene distintas inscripciones color amarillo desgastado: 'RUTYL TUBE', 'TYRE', 'FR14', 'TR 13'. La solapa del estuche tiene un corte ovalado en la parte superior al interior de su interior, asegurando los lentes solo con las tiras exteriores. La solapa se une al cuerpo a través de unos botones dorados, pero huecos, similares a unos finos aros dorados. En la tira izquierda de la solapa, se adosa la etiqueta, unida con una fina cuerda, la etiqueta es una fotografía sepia de una típica pareja que baila tango, la fotografía parece ser de los años 1940 o 1950." loading="lazy">
+                    <!--Billetera-->
+                    <img class="im2" src="../assets/img/reciclaje_10_billetera.webp" alt="Una fotografía de una billetera abierta hecha con neumático tratado, de textura un poco opaca. Las costuras están hechas a mano. Posee una especie de tarjetero hecho por 4 cortes rectos y prolijos, con terminaciones de 2 perforaciones bien redondeadas. Hacia el otro lado se aprecia la etiqueta de la marca BiMoz, cocida sobre el producto. La etiqueta tiene dos orificios metálicos: en el orificio inferior hay una pequeña cuerda que une a otra etiqueta rectangular de papel. Esta última muestra una fotografía sepia de un hombre con lentes con los brazos cruzados, que parece ser de los años 1940 o 1950." loading="lazy">
+                    <!--Estuche cerrado-->
+                    <img class="im3" src="../assets/img/reciclaje_11_estuche.webp" alt="La fotografia representa un estuche de lentes hecho con neumático reciclado color caucho negro natural. Se aprecian las costuras a la vista y los botones metalizados en la solapa del estuche. Adosado a la izquierda del estuche está la etiqueta beige de la marca BiMoz, con dos orificios metalicos. En el orificio superior se ata una fina cuerda que une a otra etiqueta rectangular de papel, la cual tiene un diseño de partitura con notas musicales, blanco y negro." loading="lazy">
+                    <!--Billetera cerrada-->
+                    <img class="im4" src="../assets/img/reciclaje_12_estuche.webp" alt="La imagen  muestra sobre un fondo blanco a una billetera color negro hecha de neumático tratado. Se aprecian las costuras a la vista y la textura suave y brillante del producto. La billetera es color negro y tiene una franja decorativa en el centro cocida con detalles que consisten de cuatro líneas finas cocidas color gris claro que corren paralelas a lo largo de la billetera, y distintas líneas diagonales que corren desde una esquina y se van desvaneciendo hacia el centro de la billetera, con tonos blancos, grises y negros." loading="lazy">
+                    <img class="im5" src="../assets/img/reciclaje_ultima.webp" alt="Riñonera hecha con neumatico reciclado color negro caucho natural. La pieza central tiene forma cuadrada, tiene una solapa que se une al cuerpo del producto con un botón metalizado. Se aprecia la textura suavizada y brillante del caucho, la pieza central tiene una líneas diagonales naturales del material. La correa de neumático parece estar inflada, hueca y se cierra a través de una hebilla de plástico resistente." loading="lazy">
                 </div>
                 
-                               
-                <!--Foto estuche + descripción del proyecto-->
-                <div>
-                    <!--Fotografía estuche con detalle de marca-->
-                    <img src="../assets/img/reciclaje_08_estuche.webp" alt="Una fotografía detallada de la parte delantera de un estuche de lentes hecho con neumático reciclado. La textura del estuche es rugosa y opaca y las costuras a mano. La solapa está abierta y tiene un corte redondeado en su interior. Se aprecia que en la parte trasera hay un pequeño bolsillo, además de la etiqueta beige con el nombre de la marca BiMoz, unida a través de unas tachas huecas color bronce." loading="lazy">
-
-                    <!--Descripción del proyecto-->
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                </div>
-
-                <!--Collage de fotos, 4 en un lateral y una grande en el otro lateral.-->
-                <div>
-                    <!--Primeras 4 fotos-->
-                    <div>
-                        <!--Las dos fotos superiores-->
-                        <div>
-                            <!--Estuche de lentes-->
-                            <img src="../assets/img/reciclaje_09_estuche.webp" alt="Una fotografía frontal de un estuche de lentes hecho con neumático reciclado. La textura del estuche es rugosa y opaca y las costuras están hechas a mano. La parte principal del estuche tiene distintas inscripciones color amarillo desgastado: 'RUTYL TUBE', 'TYRE', 'FR14', 'TR 13'. La solapa del estuche tiene un corte ovalado en la parte superior al interior de su interior, asegurando los lentes solo con las tiras exteriores. La solapa se une al cuerpo a través de unos botones dorados, pero huecos, similares a unos finos aros dorados. En la tira izquierda de la solapa, se adosa la etiqueta, unida con una fina cuerda, la etiqueta es una fotografía sepia de una típica pareja que baila tango, la fotografía parece ser de los años 1940 o 1950." loading="lazy">
-                            <!--Billetera-->
-                            <img src="../assets/img/reciclaje_10_billetera.webp" alt="Una fotografía de una billetera abierta hecha con neumático tratado, de textura un poco opaca. Las costuras están hechas a mano. Posee una especie de tarjetero hecho por 4 cortes rectos y prolijos, con terminaciones de 2 perforaciones bien redondeadas. Hacia el otro lado se aprecia la etiqueta de la marca BiMoz, cocida sobre el producto. La etiqueta tiene dos orificios metálicos: en el orificio inferior hay una pequeña cuerda que une a otra etiqueta rectangular de papel. Esta última muestra una fotografía sepia de un hombre con lentes con los brazos cruzados, que parece ser de los años 1940 o 1950." loading="lazy">
-                        </div>
-                        <!--Las dos fotografías inferiores-->
-                        <div>
-                            <!--Estuche cerrado-->
-                            <img src="../assets/img/reciclaje_11_estuche.webp" alt="La fotografia representa un estuche de lentes hecho con neumático reciclado color caucho negro natural. Se aprecian las costuras a la vista y los botones metalizados en la solapa del estuche. Adosado a la izquierda del estuche está la etiqueta beige de la marca BiMoz, con dos orificios metalicos. En el orificio superior se ata una fina cuerda que une a otra etiqueta rectangular de papel, la cual tiene un diseño de partitura con notas musicales, blanco y negro." loading="lazy">
-                            <!--Billetera cerrada-->
-                            <img src="../assets/img/reciclaje_12_estuche.webp" alt="La imagen  muestra sobre un fondo blanco a una billetera color negro hecha de neumático tratado. Se aprecian las costuras a la vista y la textura suave y brillante del producto. La billetera es color negro y tiene una franja decorativa en el centro cocida con detalles que consisten de cuatro líneas finas cocidas color gris claro que corren paralelas a lo largo de la billetera, y distintas líneas diagonales que corren desde una esquina y se van desvaneciendo hacia el centro de la billetera, con tonos blancos, grises y negros." loading="lazy">
-                        </div>
-                    </div>
-
-                    <img src="../assets/img/reciclaje_ultima.webp" alt="Riñonera hecha con neumatico reciclado color negro caucho natural. La pieza central tiene forma cuadrada, tiene una solapa que se une al cuerpo del producto con un botón metalizado. Se aprecia la textura suavizada y brillante del caucho, la pieza central tiene una líneas diagonales naturales del material. La correa de neumático parece estar inflada, hueca y se cierra a través de una hebilla de plástico resistente." loading="lazy">
-                    
-                </div>
 
             </section>
 
         </main>
 
         <!--FOOTER-->
-        <footer>
-            <div class="contenedorFooter">
-                <ul class="listaFooter">
-                    <!--Icono + Texto para volver a la página principal-->
-                    <li class="itemFooter"><a class="linkFooter" href="../index.html">
+        <footer class="container-fluid">
+            <ul class="d-flex justify-content-center m-0">
+                <!--Icono + Texto para volver a la página principal-->
+                <li class="m-2">
+                    <a class="linkFooter" href="../index.html">
                         <img class="logoFooter" src="../assets/img/logo_modo_dia.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
                         BiMoz
-                        </a>
-                    </li>
-    
-                    <!--Texto para ir a la página de contacto-->
-                    <li class="itemFooter">
-                        <a href="./contactame.html">Contacto</a>
-                    </li>
-    
-                    <!--Icono para ir a Youtube-->
-                    <li class="itemFooter"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                    <!--Icono para ir a Instagram-->
-                    <li class="itemFooter"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <!--Icono para ir a Pinterest-->
-                    <li class="itemFooter"><a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
-                    <!--Icono para mandar un mail-->
-                    <li class="itemFooter"><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
-            </div>
-            
+                    </a>
+                </li>
+
+                <!--Texto para ir a la página de contacto-->
+                <li class="m-2">
+                    <a class="linkFooter" href="./contactame.html">Contacto</a>
+                </li>
+
+                <!--Icono para ir a Youtube-->
+                <li class="m-2"><a class="linkFooter" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <!--Icono para ir a Instagram-->
+                <li class="m-2"><a class="linkFooter" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <!--Icono para ir a Pinterest-->
+                <li class="m-2"><a class="linkFooter" href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                <!--Icono para mandar un mail-->
+                <li class="m-2"><a class="linkFooter" href="https://mail.google.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>            
         </footer>
 
-
+        <!--Boopstrap js-->
+        <script src="../js/bootstrap.bundle.min.js"></script>
 
     </body>
 

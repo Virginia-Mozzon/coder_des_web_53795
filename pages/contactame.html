@@ -10,117 +10,136 @@
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> <!--favicon-->
 
         <!--CSS-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
     
         <!--HEADER-->    
-        <header>
-            <div class="contenedorHeader">
-                <!--Logo esquina izquierda-->
-                <a class="logoHeader" href="../index.html">
-                    <img class="logoBiMozHeader" src="../assets/img/logo_modo_noche.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
-                </a>
-                
+        <header class="sticky-top container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!--Logo header-->
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="logoBiMozHeader" src="../assets/img/logo_modo_noche.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
+                    </a>
 
-                <!--Navegación esquina derecha-->
-                <nav class="navegacion">
-                    <ul class="listaNav">
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="./destacados.html">DESTACADOS</a></li>
-                        <li><a href="./mi_arte.html">MI ARTE</a></li>
-                        <li><a href="./servicios.html">SERVICIOS</a></li>
-                        <li><a href="./contactame.html">CONTACTAME</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <!--Navegación esquina derecha-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link m-1" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./destacados.html">DESTACADOS</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./mi_arte.html">MI ARTE</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./servicios.html">SERVICIOS</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-1" href="./contactame.html">CONTACTAME</a></li>
+                            </li>
+                    </div>
+                </div>
+            </nav>
         </header>   
 
         <!--MAIN-->       
-        <main>
+        <main class="container-fluid p-0 mainContactame">
             
-            <section>
-                <!--La idea es sumar un video del logo animado.-->
+            <section class="encabezadoContactame">
                 <h1>TODO EL TIEMPO EN MOVIMIENTO</h1>
             </section>
             
             <!--Sección mapa con todos los países recorridos.-->
-            <section>
-                <h2>Donde estuve</h2>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1jeKEc5An--V9yWRGPg49ZLt9obBrOos&ehbc=2E312F&noprof=1" width="640" height="480" loading="lazy" ></iframe>
+            <section class="container-fluid d-flex flex-column align-items-center contenedorMapamundi">
+                <h2 class="align-items-center">Donde estuve</h2>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1jeKEc5An--V9yWRGPg49ZLt9obBrOos&ehbc=2E312F&noprof=1" height="550" class="mapamundi" loading="lazy" ></iframe>
             </section>
 
-            <section>
+            <section class="container-fluid actualidad d-flex flex-column align-items-center">
                 <h2>Donde estoy ahora</h2>
                 
-                <!--Sección mapa con ubicación actual-->
-                <div>
-                    <!--Dirección-->
-                    <h3>Ubicación</h3>
-                    <p>Intersección Calle 62 y Camino Vecinal, Punta Colorada</p>
-                    <p>Maldonado, Uruguay</p>
-                    <!--Mapa-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4628.406392067668!2d-55.256060745142825!3d-34.88693198500387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x957569db6634f543%3A0x3b8c2665e5d4485c!2sC.%2062%20%26%20Cam.%20Vecinal%2C%2020200%20Punta%20Colorada%2C%20Departamento%20de%20Maldonado%2C%20Uruguay!5e0!3m2!1ses-419!2sar!4v1707424845335!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <div class="d-flex justify-content-between elementosActualidad">
+                    
+                    <!--Sección mapa con ubicación actual-->
+                    <div class="sectorElementosActualidad ml-2">
+                        <!--Dirección-->
+                        <h3>Ubicación</h3>
+                        <p class="m-0">Intersección Calle 62 y Camino Vecinal, Punta Colorada</p>
+                        <p class="m-0 mb-3">Maldonado, Uruguay</p>
+                        <!--Mapa-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4628.406392067668!2d-55.256060745142825!3d-34.88693198500387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x957569db6634f543%3A0x3b8c2665e5d4485c!2sC.%2062%20%26%20Cam.%20Vecinal%2C%2020200%20Punta%20Colorada%2C%20Departamento%20de%20Maldonado%2C%20Uruguay!5e0!3m2!1ses-419!2sar!4v1707424845335!5m2!1ses-419!2sar" class="mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            
+                    </div>
 
-                <!--Sección formulario-->
-                <div>
-                    <h3>Contactame</h3>
-                    <form action="" method="post">
-                        <div>
-                            <!--Camplo: Nombre-->
-                            <input type="text" placeholder="Nombre" id="name" name="name" required>
-                            <!--Camplo: Mail-->
-                            <input type="email" placeholder="Mail" id="email" name="email" required>
-                        </div>
-                        <div>
-                            <!--Camplo: Asunto-->
-                            <input type="text" placeholder="Asunto" id="subject" name="subjetc" required>   
-                        </div>
-                        <div>
-                            <!--Camplo: Mensaje-->
-                            <textarea name="Mensaje" id="message" cols="30" rows="10" placeholder="Ingrese motivo de contacto." required></textarea>
-                        </div>
-                        <!--Botón de enviar y resetear-->
-                        <div>
-                            <input type="reset" value="Borrar">
-                            <input type="submit" value="Enviar">
-                        </div>   
-                    </form>
+                    <!--Sección formulario-->
+                    <div class="sectorElementosActualidad mr-2">
+                        <h3>Contactame</h3>
+                        <form action="" method="post" class="formContactame">
+                            <div class="d-flex justify-content-between m-1">
+                                <!--Camplo: Nombre-->
+                                <input type="text" class="form-control inputsRow1" placeholder="Nombre" id="name" name="name" required>
+                                <!--Camplo: Mail-->
+                                <input type="email" class="form-control inputsRow1" placeholder="Mail" id="email" name="email" required>
+                            </div>
+                            <div class="d-flex m-1">
+                                <!--Camplo: Asunto-->
+                                <input type="text" class="form-control" placeholder="Asunto" id="subject" name="subjetc" required>   
+                            </div>
+                            <div class="d-flex m-1">
+                                <!--Camplo: Mensaje-->
+                                <textarea name="Mensaje" class="form-control" id="message" cols="30" rows="10" placeholder="Ingrese motivo de contacto." required></textarea>
+                            </div>
+                            <!--Botón de enviar y resetear-->
+                            <div class="d-flex flex-row justify-content-end">
+                                <input class="botonForm text-uppercase m-2 pt-1 pb-1 px-3 py-3" type="reset" value="Borrar">
+                                <input class="botonForm text-uppercase m-2 pt-1 pb-1 px-3 py-3" type="submit" value="Enviar">
+                            </div>   
+                        </form>
+                    </div>
                 </div>
+                
             </section>
 
         </main>
 
         <!--FOOTER-->
-        <footer>
-            <div class="contenedorFooter">
-                <ul class="listaFooter">
-                    <!--Icono + Texto para volver a la página principal-->
-                    <li class="itemFooter"><a class="linkFooter" href="../index.html">
+        <footer class="container-fluid">
+            <ul class="d-flex justify-content-center m-0">
+                <!--Icono + Texto para volver a la página principal-->
+                <li class="m-2">
+                    <a class="linkFooter" href="../index.html">
                         <img class="logoFooter" src="../assets/img/logo_modo_dia.png" alt="Logo de Bianca María Mozzon, Diseñadora Industrial y artista">
                         BiMoz
-                        </a>
-                    </li>
-    
-                    <!--Texto para ir a la página de contacto-->
-                    <li class="itemFooter">
-                        <a href="./contactame.html">Contacto</a>
-                    </li>
-    
-                    <!--Icono para ir a Youtube-->
-                    <li class="itemFooter"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                    <!--Icono para ir a Instagram-->
-                    <li class="itemFooter"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <!--Icono para ir a Pinterest-->
-                    <li class="itemFooter"><a href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
-                    <!--Icono para mandar un mail-->
-                    <li class="itemFooter"><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
-            </div>
-            
+                    </a>
+                </li>
+
+                <!--Texto para ir a la página de contacto-->
+                <li class="m-2">
+                    <a class="linkFooter" href="./contactame.html">Contacto</a>
+                </li>
+
+                <!--Icono para ir a Youtube-->
+                <li class="m-2"><a class="linkFooter" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <!--Icono para ir a Instagram-->
+                <li class="m-2"><a class="linkFooter" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <!--Icono para ir a Pinterest-->
+                <li class="m-2"><a class="linkFooter" href="https://ar.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                <!--Icono para mandar un mail-->
+                <li class="m-2"><a class="linkFooter" href="https://mail.google.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>            
         </footer>
+
+        <!--Boopstrap js-->
+        <script src="../js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
