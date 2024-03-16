@@ -1,0 +1,16 @@
+/* ---- HEADER ----*/
+header{
+    background-color: $platinum;
+    .logoBiMozHeader{
+        width: map-get($sizes, 35 );
+        height:map-get($sizes, 35 );
+    }
+    ul a {
+        border-radius: 19px 19px 19px 19px;
+        &:hover{
+            background-color:$medium-champagne;
+            box-shadow: 8px 6px 17px -7px rgba(96,96,96,0.78);
+            font-weight: 500;
+        }
+    }
+}

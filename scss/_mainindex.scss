@@ -1,0 +1,165 @@
+/* ---- INDEX ----*/
+.mainIndex{  
+    background-color: $lotion;
+    /* ---- Video de encabezado ----*/
+    .video{
+        background-color: $medium-champagne;
+        object-fit: cover;
+    }
+
+    /* ---- grilla Sobre Mi ----*/
+    .seccionSobreMi{
+        width: map-get($pct, 75);
+
+        .contenedorSobreMi{
+            @include grillas-template(5, 5, map-get($sizes, 15));
+            grid-template-areas: "titulo titulo . . . "
+                                "foto foto texto texto texto"
+                                "foto foto texto texto texto"
+                                "foto foto texto texto texto"
+                                "foto foto texto texto texto";
+            margin: map-get($sizes, 30) auto;
+            
+            .fotoSobreMi{
+                grid-area: foto;
+                object-fit: cover;
+            }
+            .tituloSobreMi{
+                grid-area: titulo;
+                
+                border-bottom: map-get($sizes, 7) solid $jet;
+                font-weight: $titles-weight;
+                color: $jet;
+            }
+            .textoSobreMi{
+                grid-area: texto;
+                margin: 0 auto;
+                margin-left: map-get($sizes, 20);
+            }
+        }
+    }    
+    
+    /*---- Tarjetas ---- */
+    .seccionTarjetas{
+        background-color: $bright-gray;
+
+        .contenedorTarjetas{
+            width: map-get($pct, 85);
+            .Tarjetas{
+                width: map-get($pct, 75);
+                margin: map-get($sizes, 50) map-get($sizes, 50);
+                border-radius: 16px 16px 16px 16px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $jet;
+        }
+        h2 {
+            font-weight: $b-weight;
+            font-size: 1.7rem;
+            color: $jet;
+        }
+    }
+}
+
+/* ---- Responsive ----*/
+@media (max-width:480px){
+    .mainIndex{
+        #myVideo{
+            width:map-get($pct, 100);
+            height:map-get($pct, 100);
+        }
+        
+        .seccionSobreMi{
+            width: map-get($pct, 90);
+            .contenedorSobreMi{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                height: auto;
+                .fotoSobreMi{
+                    margin-bottom: map-get($sizes, 30);
+                }
+            }
+        }
+
+        .seccionTarjetas{
+            .contenedorTarjetas{
+                flex-wrap: nowrap;
+                flex-direction: column;
+                padding-top: map-get($sizes, 50);
+                width: map-get($pct, 85);
+    
+                .Tarjetas{
+                    width: map-get($pct, 100);
+                    margin: 0 auto;
+                }
+    
+                h2{
+                    font-size: 1.5rem;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width:1100px) {
+    /*----- MAIN -----*/
+    .mainIndex{
+        #myVideo{
+            width:map-get($pct, 100);
+            height:50vh;
+        }
+
+        .seccionSobreMi{
+            width: map-get($pct, 85);
+            .contenedorSobreMi{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                height: auto;
+                width: map-get($pct, 85);
+                margin: 50px auto;
+                .fotoSobreMi{
+                    width: map-get($pct, 50);
+                    height: auto;
+                    margin: auto;
+                    margin-bottom: map-get($sizes, 30);
+                }
+            }
+        }
+
+        .seccionTarjetas{
+            .contenedorTarjetas{
+                flex-wrap: nowrap;
+                flex-direction: column;
+                padding-top: map-get($sizes, 50);
+                width: map-get($pct, 75);
+                .Tarjetas{
+                    
+                    width: map-get($pct, 100);
+                    margin: 0 auto;
+                    a{
+                        display: flex;
+                        flex-direction: row;
+                        img{
+                            width: map-get($pct, 50); 
+                        }
+                        .textoTarjeta{
+                            width: map-get($pct, 50);
+                            h2{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+    
+                
+            }
+        }
+    }
+}
+
+

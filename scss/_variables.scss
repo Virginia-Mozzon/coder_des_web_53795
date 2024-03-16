@@ -1,0 +1,68 @@
+/* ----- Paleta de colores -----*/
+$medium-champagne: #FBE7AA;
+$arylide-yellow: #e8ca61;
+$meat-brown: #e3b53c;
+$marigold: #f2a42e;
+$orange-yellow: #f5c126;
+$lotion: #FAFAF9;
+$platinum: #E5E5E3;
+$bright-gray: #E6E8EA;
+$chinese-silver:#c9c9cb;
+$independence: #57556A;
+$axolotl: #686A55;
+$ebony: #5B574B;
+$jet: #343434;
+$jet-transparencia: rgb(52, 52, 52, 0.25);
+$vampire-black:#080808;
+$mistyrose: mistyrose;
+$tomato: tomato;
+
+
+
+/* ----- Fuentes tipográficas y grosores----- */
+$font-family: 'Montserrat', sans-serif;
+$light-weight: 300;
+$b-weight: 700;
+$titles-weight: 900;
+
+
+/* ----- Tamaños en pixeles y porcentajes -----*/
+
+    /*En pixeles*/
+$sizes:( 
+    5: 5px,
+    7: 7px,
+    10: 10px,
+    15: 15px,
+    20: 20px,
+    25: 25px,
+    30: 30px,
+    35: 35px,
+    50: 50px,
+    150: 150px,
+    500: 500px,
+);
+    /*En porcentajes*/
+$pct:(
+    10: 10%,
+    24-3: 24.3%,
+    25: 25%,
+    30:30%,
+    40: 40%,
+    44-3: 44.3%,
+    49: 49%,
+    50: 50%,
+    55: 55%,
+    60: 60%,
+    70: 70%,
+    75: 75%,
+    80: 80%,
+    85: 85%,
+    90: 90%,
+    100: 100%,
+);
+
+/* ----- Algunos urls -----*/
+$imagen-encabezado-destacados-url:'../assets/img/contactame_encabezado.webp';
+$imagen-encabezado-contactame-url: '../assets/img/contactame_encabezado.webp';
+

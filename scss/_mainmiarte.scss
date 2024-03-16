@@ -1,0 +1,195 @@
+/* ---- ARTE ---- */
+.mainMiArte{
+    .encabezado{
+        height: 75vh;
+        object-fit: contain;
+    }
+    
+    h1{@include titulos-mi-arte($titles-weight, 3rem, 0 3rem, 0);}
+    
+    .dibujos{
+        .dibujos1{
+            .izqDib1{
+                width: map-get($pct, 50);
+                background-color: $medium-champagne;
+                padding-top: map-get($sizes, 20);
+                h2{@include titulos-mi-arte ($b-weight, 2rem, 0, map-get($sizes, 25));}
+                .guarda{
+                    width: map-get($pct, 100);
+                    img{@include imagenes-grillas (33.32%, auto);}
+                }
+                .grilla {
+                    @include grillas-template(2, 2, map-get($sizes, 20));
+                    padding: map-get($sizes, 20);
+                    grid-template-areas: "im1 im2"
+                                         "im1 im3";
+                    img{@include imagenes-grillas (map-get($pct, 100), auto);}
+                    .im1{grid-area: im1;}
+                    .im2{grid-area: im2;}
+                    .im3{grid-area: im3;}
+                }
+            }
+            figure{
+                width: map-get($pct, 50);
+            }
+        }
+        
+        .separadorGris{
+            height: 5vh;
+            background-color: $chinese-silver;
+        }
+        .dibujos2{
+            width: map-get($sizes, 100);
+            position: relative;
+            .tigreFondo{ width: map-get($pct, 90);}
+            .tigreArriba{
+                width: map-get($pct, 30);
+                height: auto;
+                position: absolute;
+                top: map-get($sizes, 150);
+                right: map-get($sizes, 10);
+                border-radius: 100px 0px 0px 100px;
+            }
+        }
+    }
+
+    .cuadros{       
+        width: map-get($pct, 100); 
+        .contenedorCuadros1{
+            .cuadros1{
+                figure{
+                    width: map-get($pct, 30);
+                    padding: 1rem;
+                    background-color: $marigold;
+                }
+                .derecha{ 
+                    background-color: $bright-gray;
+                    width: map-get($pct, 70);
+                    justify-content: flex-end;
+                    .grilla{
+                        
+                        background-color: $bright-gray;
+                        width: map-get($pct, 50);
+                        padding: map-get($sizes, 25);
+    
+                        @include grillas-template(4, 6, map-get($sizes, 5));
+                        grid-template-areas: "im1 im1 ttl ttl"
+                                             "im1 im1 im3 im4"
+                                             "im1 im1 im3 im4"
+                                             "im2 im2 im5 im5"
+                                             "im2 im2 im5 im5"
+                                             "im2 im2 im5 im5";
+                        h2{
+                            grid-area: ttl;
+                            font-weight: $b-weight;
+                        }
+                        img{@include imagenes-grillas (map-get($pct, 100), auto);}
+                        .im1{grid-area: im1;} 
+                        .im2{grid-area: im2;} 
+                        .im3{grid-area: im3;}
+                        .im4{grid-area: im4;}
+                        .im5{grid-area: im5;}
+                    }
+                }
+                
+                
+            }
+        }
+        .cuadros2{
+            height: 75vh;
+    
+            .compo {
+                position: relative;
+                .im1 {
+                    scale: .8;
+                    border: 10px solid $orange-yellow; 
+                }
+                .im2{
+                    position: absolute;
+                    height: map-get($pct, 50);
+                    width: map-get($pct, 50);
+                    border-radius: map-get($pct, 50);
+                    right: -10px;
+                    top: 60px;
+                    scale: .8;
+                    object-fit: cover;
+                    box-shadow: 18px 14px 14px -8px rgba(0,0,0,0.25);
+                }
+            } 
+        }
+    }
+
+    .fotos{
+        h2{
+            background-color: $chinese-silver;
+            font-weight: $b-weight;
+        }
+        .guardaFotos{
+            background-color: $chinese-silver;
+            img{ @include imagenes-grillas(11%, auto);}
+        }
+        background-color: $medium-champagne;
+        .grilla{
+            width: map-get($pct, 85);
+            margin: 0 auto;
+            @include grillas-template (4, 2, map-get($sizes, 10));
+            grid-template-areas: "im1 im2 im4 im4"
+                                 "im1 im3 im4 im4";
+            img{object-fit: cover;}                     
+            .im1{grid-area: im1;}
+            .im2{grid-area: im2;}
+            .im3{grid-area: im3;}
+            .im4{grid-area: im4;}
+        }
+    
+    }
+}
+
+/* ---- Responsives ---- */
+@media (max-width:480px){
+    .mainMiArte{
+        .encabezado{
+            height: 50vh;
+        }
+        
+        h1{@include titulos-mi-arte($titles-weight, 1.8rem, 0 1rem, map-get($sizes, 10) 0);}
+
+        .dibujos{
+            .dibujos1{
+                flex-direction: column-reverse;
+                .izqDib1{
+                    width: map-get($pct, 100);
+                    h2{@include titulos-mi-arte ($b-weight, 1.5rem, 0, map-get($sizes, 25));}
+                    .grilla{
+                        @include grillas-template(2, 2, map-get($sizes, 10));
+                        padding: map-get($sizes, 10);
+                    }
+                }
+            }
+        }
+
+        .cuadros{
+            width: map-get($pct, 100);
+            .contenedorCuadros1{
+                .cuadros1{
+                    figure{
+                        width: 0;
+                        padding: 0;
+                    }
+                    .derecha{
+                        width: map-get($pct, 100);
+                        margin: 0;
+                        justify-content: center;
+                        .grilla{
+                            width: map-get($pct, 100);
+                            padding: 0;
+                            h2{font-size: 1.5rem;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width:1100px){}

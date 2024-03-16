@@ -1,0 +1,73 @@
+/* ----- Mixin para grillas en css ----- */
+@mixin grillas-template ($columnas, $filas, $espacio){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    grid-template-rows: repeat($filas, 1fr);
+    gap: $espacio;
+}
+
+/* ----- Mixin para imagenes de fondo en css ----- */
+@mixin fondos-encabezados($url){
+    background-image: url($url);
+    background-position: center;
+    background-size: map-get($pct, 50);
+    background-color: $medium-champagne;
+    background-repeat: no-repeat;
+}
+
+/* ----- Mixin para titulo principal ----- */
+@mixin titulo-encabezado ($padding-bottom){
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: $padding-bottom;
+    font-weight: $light-weight;
+    color: $ebony;
+    font-size: 3rem;
+    span{font-weight: $titles-weight;}
+}
+
+@mixin subtitulos-contactame ($color-fuente-contactame, $font-size-contactame, $mbottom-contactame){
+    color: $color-fuente-contactame;
+    font-size: $font-size-contactame;
+    margin-bottom: $mbottom-contactame;
+    font-weight: $b-weight;
+}
+
+@mixin titulos-mi-arte($grosor-fuente, $fuente-size, $pad, $marg){
+    color: $vampire-black;
+    font-weight: $grosor-fuente;
+    font-size: $fuente-size;
+    padding: $pad;
+    margin: $marg;
+}
+
+
+/* ----- Mixin para imagenes de grillas ----- */
+@mixin imagenes-grillas ($ancho, $alto){
+    object-fit: cover;
+    width: $ancho;
+    height: $alto;
+}
+
+/* ----- Mixin imagenes de banda en Servicios ----- */
+@mixin imagenes-banda-servicios ($ancho-foto){
+    width: $ancho-foto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* ----- Mixin textos destacados ----- */
+@mixin textos-destacados ($padding-texto){
+    padding: $padding-texto;
+    font-weight: $light-weight;
+    font-size: 1rem;
+}
+
+@mixin titulos-destacados ($align-items-variable) {
+    display: flex;
+    justify-content: center;
+    align-items: $align-items-variable;
+}

@@ -1,0 +1,386 @@
+/* ----- DESTACADOS -----*/
+.mainDestacados{
+    .encabezadoDestacados{
+        @include fondos-encabezados($imagen-encabezado-destacados-url);
+        h1{
+            @include titulo-encabezado (9vh);
+            .bBlanco{color: $lotion;}
+            .bNegro{color: $jet;}
+        }
+    }
+    
+    h2{
+        font-size: 5rem;
+        font-weight: $titles-weight;
+        color: $vampire-black;
+    }
+
+    .cueros{
+        background-color: $chinese-silver;
+        b{color: $marigold;}
+        
+        
+        .cuerosContenedor{
+            width: map-get($pct, 85);
+            margin: 0 auto;
+            /*--- grilla 1 cueros ---*/
+            .cuerosGrilla1{
+                @include grillas-template (5, 2, 1rem);
+                grid-template-areas: "imagenCueros1 imagenCueros2 imagenCueros3 imagenCueros3 imagenCueros4"
+                                    "cueros cueros imagenCueros3 imagenCueros3 imagenCueros5";
+                img{@include imagenes-grillas (map-get($pct, 100), auto);}
+                .imagenCueros1{grid-area: imagenCueros1;}
+                .imagenCueros2{grid-area: imagenCueros2;}
+                .imagenCueros3{grid-area: imagenCueros3;}
+                .imagenCueros4{grid-area: imagenCueros4;}
+                .imagenCueros5{grid-area: imagenCueros5;}
+                .tituloCueros{
+                    grid-area: cueros;
+                    @include titulos-destacados (center);  
+                }
+            }
+            
+            /*--- grilla 2 cueros ---*/
+            .cuerosGrilla2{
+                padding-bottom: 1rem;
+                @include grillas-template (7, 3, 1rem);
+                grid-template-areas: "imagen6 imagen6 imagen7 imagen8 imagen9 imagen10 imagen10"
+                                    "imagen6 imagen6 texto2 texto2 texto2 imagen10 imagen10"
+                                    "imagen6 imagen6 texto2 texto2 texto2 imagen10 imagen10";
+                img{@include imagenes-grillas( map-get($pct, 100),  map-get($pct, 100));}
+                .textoCueros{
+                    @include textos-destacados (map-get($sizes, 15));
+                    grid-area: texto2;
+                }
+                .imagenCueros6{grid-area: imagen6;}
+                .imagenCueros7{grid-area: imagen7;}
+                .imagenCueros8{grid-area: imagen8;}
+                .imagenCueros9{grid-area: imagen9;}
+                .imagenCueros10{grid-area: imagen10;}
+            }
+        }
+    }
+    
+    .ypf{
+        .guardaYPF1{
+            width: map-get($pct, 85);
+            .ypfBanda{
+                width: map-get($pct, 24-3);
+                height:auto;
+                object-fit: contain;
+            }
+        }
+        
+        .grillaYPF1{
+            width: map-get($pct, 85);
+            @include grillas-template (7, 3, 1rem);
+            grid-template-areas: "imagen1 imagen1 imagen2 imagen3 imagen4 imagen5 imagen6"
+                                 "imagen1 imagen1 texto texto texto imagen5 imagen6"
+                                 "imagen1 imagen1 texto texto texto imagen5 imagen6";
+            
+            img{@include imagenes-grillas( map-get($pct, 100),  map-get($pct, 100));}
+            .tituloYPF{
+                grid-area: texto;
+                font-size: 8rem;
+                @include titulos-destacados (center);
+            }
+            .imagenYPF1{grid-area: imagen1;}
+            .imagenYPF2{grid-area: imagen2;}
+            .imagenYPF3{grid-area: imagen3;}
+            .imagenYPF4{grid-area: imagen4;}
+            .imagenYPF5{grid-area: imagen5;}
+            .imagenYPF6{grid-area: imagen6;}
+        }
+
+        .grillaYPF2{
+            width: map-get($pct, 85);
+            @include grillas-template (10, 8, 1rem);
+            grid-template-areas: "im1 im1 im1 im3 im3 im3 im3 im5 im5 ."
+                                 "im1 im1 im1 im3 im3 im3 im3 im5 im5 ."
+                                 "im1 im1 im1 txt txt txt txt im5 im5 ."
+                                 "im1 im1 im1 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 im4 im4 im4 im4 im7 im7 im7"
+                                 "im2 im2 im2 im4 im4 im4 im4 im7 im7 im7";
+            img{@include imagenes-grillas (map-get($pct, 100), map-get($pct, 100));}
+            .textoYPF{
+                @include textos-destacados (2rem);
+                grid-area: txt;
+            }
+            .ypfEstacion1{grid-area: im1;}
+            .ypfEstacion2{grid-area: im2;}
+            .ypfEstacion1691{grid-area: im3;}
+            .ypfEstacion1692{grid-area: im4;}
+            .ypfDispensador1{grid-area: im5;}
+            .ypfDispensador2{grid-area: im6;}
+            .ypfCarteles{grid-area: im7;}
+
+        }
+    }
+
+    hr{
+        color: $orange-yellow;
+        margin-bottom: 0;
+    }
+
+    .lineaReciclaje{
+        .grillaReciclaje1{
+            width: map-get($pct, 100);
+            @include grillas-template (14, 6, 0);
+            grid-template-areas: "im1 im1 im1 im1 im1 im1 im1 .   im2 im2 im3 im3 im4 im4"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   .   .   ttl ttl .   .  "
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im5 im5 im5 im7 im7 im7"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im5 im5 im5 im7 im7 im7"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im6 im6 im6 im7 im7 im7"
+                                 ".   .   .   .   .   .   .   .   im6 im6 im6 im7 im7 im7"
+                                 ".   .   .   .   .   .   .   .   .   .   .   .   .   .  ";
+            img{@include imagenes-grillas (map-get($pct, 100), map-get($pct, 100));}
+            .tituloReciclaje{
+                grid-area: ttl;
+                @include titulos-destacados (flex-end);
+            }                     
+            .im1{
+                grid-area: im1;
+                height: auto;}
+            .im2{grid-area: im2;}
+            .im3{ grid-area: im3;}
+            .im4{grid-area: im4;}
+            .im5{
+                grid-area: im5;
+                height: auto;
+                align-self: flex-end;}
+            .im6{
+                grid-area: im6;
+                height: auto;
+                align-self: flex-start;}
+            .im7{grid-area: im7;}
+
+            }
+        .contenedorTextoReciclaje{
+            img{
+                width: map-get($pct, 50);
+                height: auto;
+            }
+            .textoReciclaje{
+                @include textos-destacados (0);
+                width: map-get($pct, 50)}
+        }
+        
+        .grillaReciclaje2{
+            width: map-get($pct,75);
+            @include grillas-template (4, 2, 0);
+            grid-template-areas: "im1 im2 im5 im5"
+                                 "im3 im4 im5 im5";
+            img{@include imagenes-grillas (map-get($pct, 100), map-get($pct, 100));}
+            .im1{grid-area: im1;}
+            .im2{grid-area: im2;}
+            .im3{grid-area: im3;}
+            .im4{grid-area: im4;}
+            .im5{grid-area: im5;}
+        }
+    }
+}
+
+/* ---- Responsives ----- */
+@media (max-width:480px){
+    .mainDestacados{
+        .encabezadoDestacados{
+            background-size: map-get($pct, 100);
+            h1{
+                height: 35vh;
+                font-size: 1.5rem;}
+        }
+        h2{font-size: 4rem;}
+        .cueros{
+            .cuerosContenedor{
+                width: map-get($pct, 90);
+                .cuerosGrilla1{
+                    @include grillas-template (2, 5, 1rem);
+                    grid-template-areas: "imagenCueros1 imagenCueros2"
+                                         "imagenCueros4 imagenCueros5"
+                                         "cueros cueros"
+                                         "imagenCueros3 imagenCueros3"
+                                         "imagenCueros3 imagenCueros3";
+
+                }
+                .cuerosGrilla2{
+                    padding-bottom: 3rem;
+                    @include grillas-template (6, 7, 1rem);
+                    grid-template-areas: "imagen7 imagen7 imagen8 imagen8 imagen9 imagen9"
+                                         "texto2 texto2 texto2 texto2 texto2 texto2"
+                                         "texto2 texto2 texto2 texto2 texto2 texto2"
+                                         "texto2 texto2 texto2 texto2 texto2 texto2"
+                                         "texto2 texto2 texto2 texto2 texto2 texto2"
+                                         "imagen6 imagen6 imagen6 imagen10 imagen10 imagen10"
+                                         "imagen6 imagen6 imagen6 imagen10 imagen10 imagen10";
+                    img{@include imagenes-grillas( map-get($pct, 100),  auto);}
+                }
+            }
+        }
+        .ypf{
+            .guardaYPF1{
+                width: map-get($pct, 90);
+                flex-wrap: wrap;
+                .ypfBanda{
+                    width: map-get($pct, 44-3);
+                }
+            }
+            .grillaYPF1{
+                width: map-get($pct, 90);
+                @include grillas-template (6, 9, 1rem);
+                grid-template-areas: "imagen2 imagen2 imagen3 imagen3 imagen4 imagen4"
+                                     "texto texto texto texto texto texto"
+                                     "texto texto texto texto texto texto"
+                                     "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1"
+                                     "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1"
+                                     "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1"
+                                     "imagen5 imagen5 imagen5 imagen6 imagen6 imagen6"
+                                     "imagen5 imagen5 imagen5 imagen6 imagen6 imagen6"
+                                     "imagen5 imagen5 imagen5 imagen6 imagen6 imagen6";
+                img{@include imagenes-grillas( map-get($pct, 100),  auto);}
+            }
+            .grillaYPF2{
+                @include grillas-template (12, 10, 1rem);
+                grid-template-areas: "im3 im3 im3 im3 im3 im3 im3 im3 im3 im3 im3 im3"
+                                     "txt txt txt txt txt txt txt txt txt txt txt txt"
+                                     "txt txt txt txt txt txt txt txt txt txt txt txt"
+                                     "txt txt txt txt txt txt txt txt txt txt txt txt"
+                                     "txt txt txt txt txt txt txt txt txt txt txt txt"
+                                     "txt txt txt txt txt txt txt txt txt txt txt txt"
+                                     "im4 im4 im4 im4 im4 im4 im4 im4 im4 im4 im4 im4"
+                                     "im1 im1 im1 im1 im1 im1 im2 im2 im2 im2 im2 im2"
+                                     "im5 im5 im5 im5 im5 im5 im6 im6 im6 im6 im6 im6"
+                                     "im7 im7 im7 im7 im7 im7 im7 im7 im7 im7 im7 im7";
+            img{@include imagenes-grillas (map-get($pct, 100), auto);}
+            }
+        }
+        .lineaReciclaje{
+            .grillaReciclaje1{
+                @include grillas-template (6, 7, 0);
+                grid-template-areas: "im2 im2 im3 im3 im4 im4"
+                                     "im1 im1 im1 ttl ttl ttl"
+                                     "im1 im1 im1 ttl ttl ttl"
+                                     "im5 im5 im5 im7 im7 im7"
+                                     "im5 im5 im5 im7 im7 im7"
+                                     "im6 im6 im6 im7 im7 im7"
+                                     "im6 im6 im6 im7 im7 im7";
+                .tituloReciclaje{ 
+                    font-size: 1.5rem;
+                    @include titulos-destacados (center);}
+            }
+            .contenedorTextoReciclaje{
+                flex-direction: column-reverse;
+                width: map-get($pct, 100);
+                img, .textoReciclaje{ width: map-get($pct,100);}
+            }
+            .grillaReciclaje2{
+                width: map-get($pct,90);
+                @include grillas-template (2, 4, 0);
+                grid-template-areas: "im1 im2"
+                                     "im3 im4"
+                                     "im5 im5"
+                                     "im5 im5";
+            }
+        }
+    }
+}
+@media (min-width: 481px) and (max-width:1100px){
+    .mainDestacados{
+        .encabezadoDestacados{
+            background-size: map-get($pct, 100);
+            h1{
+                height: 45vh;
+                font-size: 3rem;}
+        }
+        
+        .cueros{
+            .cuerosContenedor{
+                width: map-get($pct, 95);
+                .cuerosGrilla1{
+                    @include grillas-template (2, 5, 1rem);
+                    grid-template-areas: "imagenCueros1 imagenCueros2"
+                                         "cueros cueros"                     
+                                         "imagenCueros4 imagenCueros5"
+                                         "imagenCueros3 imagenCueros3"
+                                         "imagenCueros3 imagenCueros3";
+                    h2{font-size: 9rem;}
+
+                }
+                .cuerosGrilla2{
+                    padding-bottom: 3rem;
+                    @include grillas-template (6, 4, 1rem);
+                    grid-template-areas: "imagen7 imagen7 imagen8 imagen8 imagen9 imagen9"
+                                         "texto2 texto2 texto2 texto2 texto2 texto2"
+                                         "imagen6 imagen6 imagen6 imagen10 imagen10 imagen10"
+                                         "imagen6 imagen6 imagen6 imagen10 imagen10 imagen10";
+                    img{@include imagenes-grillas( map-get($pct, 100),  auto);}
+                }
+            }
+        }
+        .ypf{
+            .guardaYPF1{
+                width: map-get($pct, 90);
+                flex-wrap: wrap;
+                .ypfBanda{
+                    width: map-get($pct, 44-3);
+                }
+            }
+            .grillaYPF1{
+                width: map-get($pct, 90);
+                @include grillas-template (6, 8, 1rem);
+                grid-template-areas: "imagen2 imagen2 imagen3 imagen3 imagen4 imagen4"
+                                     "texto texto texto texto texto texto"
+                                     
+                                     "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1"
+                                     "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1"
+                                     "imagen1 imagen1 imagen1 imagen1 imagen1 imagen1"
+                                     "imagen5 imagen5 imagen5 imagen6 imagen6 imagen6"
+                                     "imagen5 imagen5 imagen5 imagen6 imagen6 imagen6"
+                                     "imagen5 imagen5 imagen5 imagen6 imagen6 imagen6";
+                img{@include imagenes-grillas( map-get($pct, 100),  auto);}
+            }
+            .grillaYPF2{
+                @include grillas-template (12, 9, 1rem);
+                grid-template-areas: "im3 im3 im3 im3 im3 im3 im3 im3 im3 im3 im3 im3"
+                                     "txt txt txt txt txt txt txt txt txt txt txt txt"
+                                     "txt txt txt txt txt txt txt txt txt txt txt txt"
+                                     "im4 im4 im4 im4 im4 im4 im4 im4 im4 im4 im4 im4"
+                                     "im1 im1 im1 im1 im1 im1 im2 im2 im2 im2 im2 im2"
+                                     "im5 im5 im5 im5 im5 im5 im6 im6 im6 im6 im6 im6"
+                                     "im5 im5 im5 im5 im5 im5 im6 im6 im6 im6 im6 im6"
+                                     "im7 im7 im7 im7 im7 im7 im7 im7 im7 im7 im7 im7"
+                                     "im7 im7 im7 im7 im7 im7 im7 im7 im7 im7 im7 im7";
+            img{@include imagenes-grillas (map-get($pct, 100), auto);}
+            }
+        }
+        .lineaReciclaje{
+            .grillaReciclaje1{
+                @include grillas-template (6, 7, 0);
+                grid-template-areas: "im2 im2 im3 im3 im4 im4"
+                                     "im1 im1 im1 ttl ttl ttl"
+                                     "im1 im1 im1 ttl ttl ttl"
+                                     "im5 im5 im5 im7 im7 im7"
+                                     "im5 im5 im5 im7 im7 im7"
+                                     "im6 im6 im6 im7 im7 im7"
+                                     "im6 im6 im6 im7 im7 im7";
+                .tituloReciclaje{ 
+                    font-size: 4rem;
+                    @include titulos-destacados (center);}
+            }
+            .contenedorTextoReciclaje{
+                flex-direction: column-reverse;
+                width: map-get($pct, 100);
+                img, .textoReciclaje{ width: map-get($pct,100);}
+            }
+            .grillaReciclaje2{
+                width: map-get($pct,90);
+                @include grillas-template (2, 4, 0);
+                grid-template-areas: "im1 im2"
+                                     "im3 im4"
+                                     "im5 im5"
+                                     "im5 im5";
+            }
+        }
+    }
+}

@@ -1,0 +1,241 @@
+/* ---- SERVICIOS ---- */
+.mainServicios{
+    h1{
+        font-weight: $titles-weight;
+        color: $ebony;
+        font-size: 3rem;
+    }
+
+    h2{
+        font-weight: $b-weight;
+        color: $ebony;
+        font-size: 2rem;
+        margin:2rem;
+    }
+
+    .video{
+        background-color: $chinese-silver;
+        video{
+            object-fit: cover;
+            height: auto;
+            width: map-get($pct, 100);
+        }
+        
+    }
+
+    .morfologia{
+        background-color: $medium-champagne;
+        width: map-get($pct,100);
+        
+        .imagenBanda1{ @include imagenes-banda-servicios(16.6%);}
+        .grillaMorfologia{
+            width: map-get($pct,100);
+            .grilla1Morfo{
+                width: map-get($pct,100);
+                .imagen{width: map-get($pct,25);}
+                .texto {
+                    color: $ebony;
+                    b{color: $marigold;}}
+            }
+            .grilla2Morfo{width: map-get($pct,60);}
+        }
+        .imagenBanda2{@include imagenes-banda-servicios(12.5%);}
+    }
+
+    .disFuncional{
+        background-color: $platinum;
+        width: map-get($pct,100);
+        .imagen1{@include imagenes-banda-servicios (map-get($pct,30));}
+        .imagen2{@include imagenes-banda-servicios (map-get($pct,40));}
+        .imagen3{@include imagenes-banda-servicios (map-get($pct,30));}
+        .estante{img{@include imagenes-grillas(auto, 47vh);}}
+    }
+
+    .renders{
+        width: map-get($pct, 100);
+        .contenedorArquitecturaBanda{
+            .arquitecturaBanda {
+                object-fit: cover;
+                width: map-get($pct, 25);
+            }
+        }
+        .contenedorFreddo{
+            .contenedorImagenesFreddo{
+                width: map-get($pct, 50);
+                .freddo{
+                    object-fit: cover;
+                    height: 31vh;
+                    width: map-get($pct, 50);
+                }
+            }
+            .textoRenders{
+                width: map-get($pct, 50);
+            }
+        }
+        .edificios{
+            .textoEdificios{
+                width: map-get($pct, 50);
+            }
+            .contenedorEdificiosImagenes{
+                width: map-get($pct, 50);
+                .arq{
+                    object-fit: cover;
+                    height: auto;
+                }
+            }
+        }
+    }    
+}
+
+
+/* ---- Responsives ----- */
+@media (max-width:480px){
+    .mainServicios{
+        #myVideo{
+            width:map-get($pct, 100);
+            height:map-get($pct, 100);
+        }
+        h1{
+            font-size: 3rem;
+            text-align: center;
+            margin: 2rem;
+        }
+        h2{font-size: 1.5rem;}
+        .morfologia{
+            .contenedorMorfoBanda1{
+                flex-wrap: wrap;
+                .imagenBanda1{@include imagenes-banda-servicios(33.00%);}
+            }
+            .grillaMorfologia{
+                flex-direction: column;
+                .grilla1Morfo{
+                    .imagen{width: map-get($pct,50);}
+                }
+                .grilla2Morfo{width: map-get($pct,85);}
+            }
+            .imagenBanda2{@include imagenes-banda-servicios(25%);}
+            
+        }
+        .disFuncional{
+            
+            width: map-get($pct, 100);
+            .estante{
+                margin-top: map-get($sizes,25);
+                width: map-get($pct, 100);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                        
+                .im1, .im2{
+                    width: map-get($pct, 50);
+                    height: auto;}
+                .im3, .im4 {width: map-get($pct, 100);
+                    height: auto;}
+            }
+        }
+        .renders{
+            .contenedorArquitecturaBanda{
+                display: flex;
+                flex-wrap: wrap;
+                .arquitecturaBanda {
+                    width: map-get($pct, 50);
+                }
+            }
+            .contenedorFreddo{
+                width: map-get($pct, 100);
+                flex-direction: column-reverse;
+                .contenedorImagenesFreddo{
+                    width: map-get($pct, 100);
+                    margin-bottom: map-get($sizes, 50);
+                    flex-direction: column;
+                    .freddo{
+                        width: map-get($pct, 100);
+                    }
+                }
+                .textoRenders{
+                    width: map-get($pct, 100);
+                }
+            }
+
+            .edificios{
+                display: flex;
+                flex-direction: column;
+                .textoEdificios{width: map-get($pct, 100);}
+                .contenedorEdificiosImagenes{width: map-get($pct, 100);}
+            }
+        }
+        
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width:1100px){
+    .mainServicios{
+        #myVideo{
+            width:map-get($pct, 100);
+            height:map-get($pct, 100);
+        }
+        h1{
+            font-size: 3rem;
+            text-align: center;
+            margin: 2rem;
+        }
+        .morfologia{
+            .grillaMorfologia{
+                flex-direction: column;
+                .grilla1Morfo{
+                    .imagen{width: map-get($pct,25);}
+                }
+                .grilla2Morfo{width: map-get($pct,75);}
+            }
+        }
+        .disFuncional{
+            
+            width: map-get($pct, 100);
+            .estante{
+                
+                width: map-get($pct, 75);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0 auto;
+                margin-top: map-get($sizes,25);
+                .im1, .im2{
+                    width: map-get($pct, 50);
+                    height: auto;
+                }
+                .im3{
+                    width: map-get($pct, 60);
+                    height: auto;
+                }
+                .im4 {
+                    width: map-get($pct, 40);
+                    height: auto;
+                }
+            }
+        }
+        .renders{
+            .contenedorFreddo{
+                width: map-get($pct, 100);
+                flex-direction: column-reverse;
+                .contenedorImagenesFreddo{
+                    width: map-get($pct, 100);
+                    margin-bottom: map-get($sizes, 50);
+                    .freddo{
+                        width: map-get($pct, 50);
+                    }
+                }
+                .textoRenders{
+                    width: map-get($pct, 100);
+                }
+            }
+            .edificios{
+                display: flex;
+                flex-direction: column;
+                .textoEdificios{width: map-get($pct, 100);}
+                .contenedorEdificiosImagenes{width: map-get($pct, 100);}
+            }
+        }
+    }
+}

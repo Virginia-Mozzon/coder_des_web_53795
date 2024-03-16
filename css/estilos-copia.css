@@ -1,0 +1,934 @@
+/*Tipografia: Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap');
+
+/* Reseteo de valores */
+*{
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+/* ---- HEADER ----*/
+header{
+    background-color: #E5E5E3;
+    .logoBiMozHeader{
+        width: 35px;
+        height: 35px;
+    }
+    ul a {
+        border-radius: 19px 19px 19px 19px;
+    }
+    ul a:hover{
+        background-color:#FBE7AA;
+        box-shadow: 8px 6px 17px -7px rgba(96,96,96,0.78);
+        font-weight: 500;
+    }
+}
+
+/* ---- Videos de encabezado ----*/
+#myVideo {
+    right:0;
+    bottom:0;
+    width: 50%;
+    height: 60vh;
+}
+
+/* ---- INDEX ----*/
+.mainIndex{
+    b{color: #FBE7AA;}
+
+    /* ---- Video de encabezado ----*/
+    
+    .video{
+        background-color: #FBE7AA;
+        object-fit: cover;
+    }
+
+    /* ---- grilla Sobre Mi ----*/
+    .contenedorSobreMi{
+
+        display: grid;
+        width: 75%;
+        height: auto;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "titulo titulo . . . "
+                             "foto foto texto texto texto"
+                             "foto foto texto texto texto"
+                             "foto foto texto texto texto"
+                             "foto foto texto texto texto";
+        
+        gap: 15px;
+        margin: 30px auto;
+        
+        .fotoSobreMi{
+            grid-area: foto;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .tituloSobreMi{
+            grid-area: titulo;
+            
+            border-bottom: 7px solid rgb(52, 52, 52);
+            font-weight: 900;
+            color: rgb(52, 52, 52);
+        }
+        .textoSobreMi{
+            grid-area: texto;
+            margin: 0 auto;
+        }
+        
+    }
+    
+    /*---- Tarjetas ---- */
+    .seccionTarjetas{
+        background-color: #E6E8EA;
+
+        .contenedorTarjetas{
+            width: 85%;
+        }
+
+        .Tarjetas{
+            margin: 50px 0;
+            width: 25%;
+            border-radius: 16px 16px 16px 16px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(45, 44, 44);
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 1.7rem;
+            color: rgb(52, 52, 52);
+        }
+    }
+}
+
+/* ---- CONTACTAME ----*/
+.mainContactame{
+    .encabezadoContactame{
+        background-image: url(../assets/img/contactame_encabezado.webp);
+        background-position: center;
+        background-size: 50%;
+        background-color: #FBE7AA;
+        background-repeat: no-repeat;
+        h1{
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 10vh;
+            font-weight: 700;
+            color: #5B574B;
+            font-size: 3rem;
+         }
+    }
+
+    h2{
+        color: rgb(52, 52, 52);
+        font-size: 2rem;
+        margin-bottom: 25px;
+        font-weight: 700;
+        border-bottom: 7px solid rgb(52, 52, 52);
+        width: 75%;
+    }
+    .contenedorMapamundi{
+        padding: 3rem;
+        .mapamundi{
+            width: 75%;
+        }
+    }
+    
+    h3{
+        color: rgb(52, 52, 52);
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .mapa{
+        width: 80%;
+        height: 70%;
+    }
+
+    .actualidad{
+        background-color: #E6E8EA;
+        padding: 3rem;
+        .elementosActualidad{
+            width: 75%;
+            .sectorElementosActualidad{
+                width: 50%;
+            }
+        }
+        .inputsRow1{
+            width: 49%;
+        }
+        .botonForm{
+            background-color: #FBE7AA;
+            border: 0;
+            color: rgb(52, 52, 52);
+        }
+        input{
+            background-color: #fcfcfc;
+        }
+        textarea{
+            background-color: #fcfcfc;
+        }
+    
+        input::placeholder{
+            font-size: 0.8rem;
+            color: rgb(52, 52, 52);
+        }
+        textarea::placeholder{
+            font-size: 0.8rem;
+            color: rgb(52, 52, 52);
+        }
+        input:focus{
+            background-color: #FBE7AA;
+            border-color: rgb(52, 52, 52);
+            box-shadow: 0 0 13px 0.1rem rgb(52, 52, 52, 0.25);
+        }
+        textarea:focus{
+            background-color: #FBE7AA;
+            border-color: rgb(52, 52, 52);
+            box-shadow: 0 0 13px 0.1rem rgb(52, 52, 52, 0.25);
+        }
+        input[type="email"]:not(:placeholder-shown):invalid {
+            border: 0.1rem solid tomato;
+            background: mistyrose;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right calc(0.375em + 0.1875rem) center;
+            background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+        }
+    }
+
+    
+}
+
+/* ---- SERVICIOS ---- */
+.mainServicios{
+    h1{
+        font-weight: 900;
+        color: #5B574B;
+        font-size: 3rem;
+    }
+
+    .video{
+        background-color: #c9c9cb;
+        object-fit: cover;
+    }
+
+    .morfologia{
+        background-color: #FBE7AA;
+
+        .imagenBanda1{
+            width: 16.6%;
+            height: auto;
+            object-fit: contain;
+        }
+        .imagen{
+            width: 25%;
+        }
+        .grilla2Morfo{
+            width: 35%;
+        }
+        .grilla1Morfo{
+            width: 65%;
+        }
+        .texto {
+            color: #5B574B;
+            b{
+                color: #f2a42e;
+        }}
+        .imagenBanda2{
+            width: 12.5%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .disFuncional{
+        background-color: #E5E5E3;
+        .imagen1{
+            width: 30%;
+            object-fit: contain;
+        }
+        .imagen2{
+            width: 40%;
+            object-fit: contain;
+        }
+        .imagen3{
+            width: 33.32%;
+        }
+        .estante{
+            img{
+                width: auto;
+                height: 47vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .arquitecturaBanda {
+        object-fit: cover;
+    }
+    .freddo{
+        object-fit: cover;
+        height: 31vh;
+    }
+    .arq{
+        object-fit: cover;
+        height: auto;
+    }
+
+    .renders{
+        b{
+            color: #FBE7AA;
+        }
+    }
+    h2{
+        font-weight: 700;
+        color: #5B574B;
+        font-size: 2rem;
+        margin:2rem;
+    }
+}
+
+/* ----- DESTACADOS -----*/
+.mainDestacados{
+    .encabezadoDestacados{
+        background-image: url(../assets/img/contactame_encabezado.webp);
+        background-position: center;
+        background-size: 50%;
+        background-color: #FBE7AA;
+        background-repeat: no-repeat;
+        h1{
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 9vh;
+            font-weight: 300;
+            color: #5B574B;
+            font-size: 3rem;
+            span{
+                font-weight: 900;
+            }
+            .bBlanco{
+                color: white;
+            }
+            .bNegro{
+                color: black;
+            }
+        }
+    }
+    
+    h2{
+        font-size: 5rem;
+        font-weight: 900;
+        color: #080808;
+    }
+
+    .cueros{
+        background-color: #c9c9cb;
+        b{
+            color: #f2a42e;
+        }
+
+        /*--- grilla 1 cueros ---*/
+        .cuerosGrilla1{
+            width: 85%;
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "imagenCueros1 imagenCueros2 imagenCueros3 imagenCueros3 imagenCueros4"
+                                "cueros cueros imagenCueros3 imagenCueros3 imagenCueros5";
+
+            gap: 1rem;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+            }
+
+            .imagenCueros1{
+                grid-area: imagenCueros1;
+            }
+            .imagenCueros2{
+                grid-area: imagenCueros2;
+            }
+            .imagenCueros3{
+                grid-area: imagenCueros3;
+            }
+            .imagenCueros4{
+                grid-area: imagenCueros4;
+            }
+            .imagenCueros5{
+                grid-area: imagenCueros5;
+            }
+            .tituloCueros{
+                grid-area: cueros;
+                display: flex;
+                justify-content: center;
+                align-items: center;   
+            }
+        }
+        
+        /*--- grilla 2 cueros ---*/
+        .cuerosGrilla2{
+            width: 85%;
+            padding-bottom: 1rem;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "imagen6 imagen6 imagen7 imagen8 imagen9 imagen10 imagen10"
+                                 "imagen6 imagen6 texto2 texto2 texto2 imagen10 imagen10"
+                                 "imagen6 imagen6 texto2 texto2 texto2 imagen10 imagen10";
+            gap: 1rem;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .textoCueros{
+                grid-area: texto2;
+                padding: 2rem;
+                font-weight: 300;
+                font-size: 0.8rem;
+            }
+            .imagenCueros6{
+                grid-area: imagen6;
+            }
+            .imagenCueros7{
+                grid-area: imagen7;
+            }
+            .imagenCueros8{
+                grid-area: imagen8;
+            }
+            .imagenCueros9{
+                grid-area: imagen9;
+            }
+            .imagenCueros10{
+                grid-area: imagen10;
+            }
+        }
+
+    }
+    
+    .ypf{
+        .guardaYPF1{
+            width: 85%;
+            .ypfBanda{
+                width: 24.3%;
+                height:auto;
+                object-fit: contain;
+            }
+        }
+        
+        .grillaYPF1{
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: "imagen1 imagen1 imagen2 imagen3 imagen4 imagen5 imagen6"
+                                 "imagen1 imagen1 texto texto texto imagen5 imagen6"
+                                 "imagen1 imagen1 texto texto texto imagen5 imagen6";
+            gap: 1rem;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .tituloYPF{
+                grid-area: texto;
+                font-size: 8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .imagenYPF1{
+                grid-area: imagen1;
+            }
+            .imagenYPF2{
+                grid-area: imagen2;
+            }
+            .imagenYPF3{
+                grid-area: imagen3;
+            }
+            .imagenYPF4{
+                grid-area: imagen4;
+            }
+            .imagenYPF5{
+                grid-area: imagen5;
+            }
+            .imagenYPF6{
+                grid-area: imagen6;
+            }
+        }
+
+        .grillaYPF2{
+            b{
+                color: #FBE7AA;
+                font-weight: 500;
+            }
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas: "im1 im1 im1 im3 im3 im3 im3 im5 im5 ."
+                                 "im1 im1 im1 im3 im3 im3 im3 im5 im5 ."
+                                 "im1 im1 im1 txt txt txt txt im5 im5 ."
+                                 "im1 im1 im1 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 txt txt txt txt . im6 im6"
+                                 "im2 im2 im2 im4 im4 im4 im4 im7 im7 im7"
+                                 "im2 im2 im2 im4 im4 im4 im4 im7 im7 im7";
+            gap: 1rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .textoYPF{
+                grid-area: txt;
+                padding: 2rem;
+                font-weight: 300;
+                font-size: 0.8rem;
+            }
+            .ypfEstacion1{
+                grid-area: im1;
+            }
+            .ypfEstacion2{
+                grid-area: im2;
+            }
+            .ypfEstacion1691{
+                grid-area: im3;
+            }
+            .ypfEstacion1692{
+                grid-area: im4;
+            }
+            .ypfDispensador1{
+                grid-area: im5;
+            }
+            .ypfDispensador2{
+                grid-area: im6;
+            }
+            .ypfCarteles{
+                grid-area: im7;
+            }
+
+        }
+    }
+
+    hr{
+        color: #f5c126;
+        margin-bottom: 0;
+    }
+
+    .lineaReciclaje{
+        .grillaReciclaje1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas: "im1 im1 im1 im1 im1 im1 im1 .   im2 im2 im3 im3 im4 im4"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   .   .   ttl ttl .   .  "
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im5 im5 im5 im7 im7 im7"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im5 im5 im5 im7 im7 im7"
+                                 "im1 im1 im1 im1 im1 im1 im1 .   im6 im6 im6 im7 im7 im7"
+                                 ".   .   .   .   .   .   .   .   im6 im6 im6 im7 im7 im7"
+                                 ".   .   .   .   .   .   .   .   .   .   .   .   .   .  ";
+
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .tituloReciclaje{
+                grid-area: ttl;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }                     
+            .im1{
+                grid-area: im1;
+                height: auto;}
+            .im2{grid-area: im2;}
+            .im3{ grid-area: im3;}
+            .im4{grid-area: im4;}
+            .im5{
+                grid-area: im5;
+                height: auto;
+                align-self: flex-end;}
+            .im6{
+                grid-area: im6;
+                height: auto;
+                align-self: flex-start;}
+            .im7{grid-area: im7;}
+
+            }
+        .textoReciclaje{
+            font-size: 0.9rem;
+            font-weight: 300;
+            b{
+                color: #FBE7AA;
+                font-weight: 500;
+            }
+        }
+        .grillaReciclaje2{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "im1 im2 im5 im5"
+                                 "im3 im4 im5 im5";
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .im1{grid-area: im1;}
+            .im2{grid-area: im2;}
+            .im3{grid-area: im3;}
+            .im4{grid-area: im4;}
+            .im5{grid-area: im5;}
+        }
+
+        }
+
+        
+
+}
+
+.mainMiArte{
+    .encabezado{
+        height: 75vh;
+        object-fit: contain;
+    }
+    h1{
+        font-weight: 900;
+        color: #000000;
+        font-size: 3rem;
+        padding: 0 3rem;
+    }
+    .dibujos{
+        .izqDib1{
+            background-color: #FBE7AA;
+            padding-top: 20px;
+            h2{
+                margin: 25px;
+                font-weight: 700;
+
+            }
+            .guarda{
+                img{
+                    width: 33.32%;
+                    object-fit: cover;
+                }
+            }
+            .grilla {
+                display: grid;
+                gap: 20px;
+                padding: 20px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "im1 im2"
+                                     "im1 im3";
+                img{
+                    object-fit: cover;
+                }
+                .im1{grid-area: im1;}
+                .im2{grid-area: im2;}
+                .im3{grid-area: im3;}
+            }
+        }
+        .separadorGris{
+            height: 5vh;
+            background-color: #c9c9cb;
+        }
+        .dibujos2{
+            position: relative;
+            .tigreFondo{
+                width: 90%;
+            }
+            .tigreArriba{
+                width: 500px;
+                height: auto;
+                position: absolute;
+                top: 150px;
+                right: 10px;
+                border-radius: 100px 0px 0px 100px;
+            }
+        }
+        
+    }
+    .cuadros{        
+        .cuadros1{
+            
+            figure{
+                width: 30%;
+                padding: 1rem;
+                background-color: #f2a42e;
+            }
+            .derecha{ 
+                background-color: #E6E8EA;
+                width: 70%;
+                .grilla{
+                    background-color: #E6E8EA;
+                    width: 55%;
+                    padding: 25px;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: repeat(6, 1fr);
+                    grid-template-areas: "im1 im1 ttl ttl"
+                                         "im1 im1 im3 im4"
+                                         "im1 im1 im3 im4"
+                                         "im2 im2 im5 im5"
+                                         "im2 im2 im5 im5"
+                                         "im2 im2 im5 im5";
+                    gap: 5px;
+                    h2{
+                        grid-area: ttl;
+                        font-weight: 700;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .im1{grid-area: im1;
+                        /* width: auto;
+                        align-self: self-start;*/} 
+                    .im2{grid-area: im2;
+                        /* width: auto;
+                        align-self: self-start;*/} 
+                    .im3{grid-area: im3;}
+                    .im4{grid-area: im4;}
+                    .im5{grid-area: im5;}
+                }
+            }
+            
+            
+        }
+
+        .cuadros2{
+            height: 75vh;
+    
+            .compo {
+                position: relative;
+
+                .im1 {
+                    scale: .8;
+                    border: 10px solid #f5c126; 
+                }
+
+                .im2{
+                    position: absolute;
+                    height: 50%;
+                    width: 50%;
+                    border-radius: 50%;
+                    right: -10px;
+                    top: 60px;
+                    scale: .8;
+                    object-fit: cover;
+                    box-shadow: 18px 14px 14px -8px rgba(0,0,0,0.25);
+                }
+            }
+            
+        }
+    }
+    .fotos{
+        h2{
+            background-color: #c9c9cb;
+            font-weight: 700;
+        }
+        .guardaFotos{
+            background-color: #c9c9cb;
+            img{
+                width: 11%;
+                object-fit: cover;
+            }
+        }
+
+        .grilla{
+            background-color: #FBE7AA;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "im1 im2 im4 im4"
+                                 "im1 im3 im4 im4";
+
+            gap: 10px;
+            img{
+                object-fit: cover;
+            }                     
+            .im1{grid-area: im1;}
+            .im2{grid-area: im2;}
+            .im3{grid-area: im3;}
+            .im4{grid-area: im4;}
+        }
+    
+    }
+}
+
+/* ---- Responsive ----*/
+@media (max-width:480px){
+    
+    /*----- MAIN -----*/
+    .mainIndex{
+        p{
+            font-size: 0.75rem;
+            text-align: center;
+        }
+        #myVideo{
+            width:100%;
+            height:100%;
+        }
+
+        .contenedorSobreMi{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: auto;
+            width: 90%;
+        }
+
+        .contenedorTarjetas{
+            
+            flex-wrap: nowrap;
+            flex-direction: column;
+            padding-top: 50px;
+            h2{
+                font-size: 1.5rem;
+            }
+            .Tarjetas{
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    /*----- Contactame -----*/
+    .mainContactame{
+        .encabezadoContactame{
+            background-size: 100%;
+            h1{
+                height: 35vh;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 5vh;
+                font-weight: 700;
+                color: #5B574B;
+                font-size: 1.5rem;
+             }
+        }
+        .contenedorMapamundi{
+            padding: 2rem 1rem;
+            .mapamundi{
+                width: 100%;
+                height: 30vh;
+            }
+        }
+        .actualidad{
+            padding: 2rem 1rem;
+            .elementosActualidad{
+                width: 100%;
+                flex-direction: column;
+                .sectorElementosActualidad{
+                    width: 100%;
+                    .mapa{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        
+        h2{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width:1280px) {
+    /*----- MAIN -----*/
+    .mainIndex{
+        p{
+            font-size: 1rem;  
+        }
+        #myVideo{
+            width:100%;
+            height:50vh;
+        }
+        .contenedorSobreMi{
+            p{
+                text-align: center;
+            }
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: auto;
+            width: 75%;
+            margin: 50px auto;
+            .fotoSobreMi{
+                width: 50%;
+                height: auto;
+                margin: auto;
+            }
+        }
+        .contenedorTarjetas{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            padding-top: 50px;
+            .Tarjetas{
+                
+                width: 75%;
+                margin: auto;
+
+                a{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .fotoTarjeta{
+                    width: 40%;
+                }
+
+            }
+        }
+    }
+}
+
+/* ---- FOOTER ----*/
+footer{
+    background-color: #686A55;
+    margin-block-end: 0;
+    .logoFooter{
+        width: 20px;
+        height: 20px;      
+    }
+    .linkFooter{
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
