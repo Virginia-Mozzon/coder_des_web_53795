@@ -11,30 +11,37 @@
     .seccionSobreMi{
         width: map-get($pct, 75);
 
+
         .contenedorSobreMi{
-            @include grillas-template(5, 5, map-get($sizes, 15));
-            grid-template-areas: "titulo titulo . . . "
-                                "foto foto texto texto texto"
-                                "foto foto texto texto texto"
-                                "foto foto texto texto texto"
-                                "foto foto texto texto texto";
             margin: map-get($sizes, 30) auto;
+            flex-wrap: nowrap;
+            flex-direction: row;
             
-            .fotoSobreMi{
-                grid-area: foto;
-                object-fit: cover;
+            .izquierdaSobreMi{
+                width: map-get($pct, 45);
+                justify-content: center;
+                .tituloSobreMi{
+                    border-bottom: map-get($sizes, 7) solid $jet;
+                    font-weight: $titles-weight;
+                    color: $jet;
+                }
+                picture{
+                    .fotoSobreMi{
+                        width:map-get($pct, 100);
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
             }
-            .tituloSobreMi{
-                grid-area: titulo;
-                
-                border-bottom: map-get($sizes, 7) solid $jet;
-                font-weight: $titles-weight;
-                color: $jet;
-            }
+            
             .textoSobreMi{
-                grid-area: texto;
                 margin: 0 auto;
                 margin-left: map-get($sizes, 20);
+                width: map-get($pct, 45);
+                height: auto;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
             }
         }
     }    
@@ -50,6 +57,9 @@
                 margin: map-get($sizes, 50) map-get($sizes, 50);
                 border-radius: 16px 16px 16px 16px;
             }
+            
+
+            
         }
         a {
             text-decoration: none;
@@ -74,14 +84,20 @@
         .seccionSobreMi{
             width: map-get($pct, 90);
             .contenedorSobreMi{
-                display: flex;
                 flex-direction: column;
-                flex-wrap: nowrap;
-                height: auto;
-                .fotoSobreMi{
-                    margin-bottom: map-get($sizes, 30);
+                .izquierdaSobreMi{
+                    width: map-get($pct, 100);
+                    .fotoSobreMi{
+                        margin-bottom: map-get($sizes, 30);
+                    }
+                }
+                
+                .textoSobreMi{
+                    width: map-get($pct, 100);
+                    margin: 0 auto;
                 }
             }
+            
         }
 
         .seccionTarjetas{
@@ -114,21 +130,22 @@
         }
 
         .seccionSobreMi{
-            width: map-get($pct, 85);
+            width: map-get($pct, 75);
             .contenedorSobreMi{
-                display: flex;
                 flex-direction: column;
-                flex-wrap: nowrap;
-                height: auto;
-                width: map-get($pct, 85);
-                margin: 50px auto;
-                .fotoSobreMi{
-                    width: map-get($pct, 50);
-                    height: auto;
-                    margin: auto;
-                    margin-bottom: map-get($sizes, 30);
+                .izquierdaSobreMi{
+                    width: map-get($pct, 100);
+                    .fotoSobreMi{
+                        margin-bottom: map-get($sizes, 30);
+                    }
+                }
+                
+                .textoSobreMi{
+                    width: map-get($pct, 100);
+                    margin: 0 auto;
                 }
             }
+            
         }
 
         .seccionTarjetas{

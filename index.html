@@ -16,6 +16,10 @@
         <!--CSS-->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
+
+        <!--Animaciones Aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
     </head>
     
     <body>
@@ -66,21 +70,33 @@
             
             <!--Segmento de introducción-->
             <section class="container-fluid seccionSobreMi">
-                <div class="contenedorSobreMi h-auto">
-                    <h1 class="tituloSobreMi h-100 d-flex justify-content-start align-items-end">SOBRE MÍ</h1>
-                    <img class="fotoSobreMi justify-content-center w-100 h-100" src="./assets/img/foto_bianca_inicio.webp" alt="Foto en blanco y negro de Bianca María Mozzon. Su rostro esta cubierto por una manzana roja con un tallo y una hoja verde en el lateral izquierdo. Lleva un sombrero negro, y una musculosa doble: por encima una negra, y por debajo una con estampado de animal print, que se asoma un poco. Debajo de la fotografía, hay un rectángulo blanco que cubre toda la parte baja de la foto. Y dentro de este, hay un texto en una tipografía delgada y alta que dice: Hola!" loading="lazy">      
-                    <div class="textoSobreMi">
+                
+                <div class="contenedorSobreMi h-auto d-flex">
+                    <div class="izquierdaSobreMi">
+                        <h1 class="tituloSobreMi d-flex justify-content-start align-items-end">SOBRE MÍ</h1> 
+                        <picture>
+                            <!-- <source media="(max-width: 480px)" srcset="./assets/img/foto_bianca_inicio_480.webp"> -->
+                            <source media="(min-width: 481px) and (max-width: 1100px)" srcset="./assets/img/foto_bianca_inicio_480a1100.webp">
+                            <!-- <source media="(min-width: 1101px)" srcset="./assets/img/foto_bianca_inicio.webp"> -->
+                            <img class="fotoSobreMi justify-content-center" src="./assets/img/foto_bianca_inicio.webp" alt="Foto en blanco y negro de Bianca María Mozzon. Su rostro esta cubierto por una manzana roja con un tallo y una hoja verde en el lateral izquierdo. Lleva un sombrero negro, y una musculosa doble: por encima una negra, y por debajo una con estampado de animal print, que se asoma un poco. Debajo de la fotografía, hay un rectángulo blanco que cubre toda la parte baja de la foto. Y dentro de este, hay un texto en una tipografía delgada y alta que dice: Hola!" loading="lazy">      
+                    
+                        </picture>
+                    </div>
+                    
+                    
+                    <div class="textoSobreMi d-flex">
                         <p>Soy <b>Bianca María Mozzon</b>, y soy <b>Diseñadora Industrial</b> recibida de la Universidad de Buenos Aires, con un <b>Posgrado en Morfología</b> y una <b>Maestría en Lógica y Técnica de la Forma</b>. En mis años de estudio desarrollé una investigación acerca de la lógica geométrica en la transición del plano al espacio, y fui <b>docente</b> de la asignatura Morfología.</p>
                         <p>La fotografía, la pintura y el dibujo dan forma a mi creatividad. El viaje es mi forma de vida. Una de mis mayores cualidades es <b>diseñar soluciones</b> y <b>producir ideas</b> de una forma creativa y original.</p> 
                     </div>
                 </div>
+                
             </section>
 
             <!--Accesos a otras páginas del sitio-->
             <section class="seccionTarjetas">
                 <div class="d-flex justify-content-evenly m-auto contenedorTarjetas">
                     <!--Primera carta: EXPERIENCIA-->
-                    <div class="Tarjetas card shadow-sm p-3 mb-5 bg-body justify-content-between">
+                    <div class="Tarjetas card shadow-sm p-3 mb-5 bg-body justify-content-between" data-aos="zoom-in" data-aos-duration="1500">
                         <a href="./pages/destacados.html">
                             <img src="./assets/img/mi_experiencia_inicio.webp" class="card-img-top fotoTarjeta" alt="Fotografía que muestra una parte de la fachada de un edificio minimalista. Es la esquina de un techo de una estación de servicio YPF, compuesta de colores blanco, celeste y gris. De fondo, un día claro despejado y de día." loading="lazy">
                             <div class="card-body textoTarjeta">
@@ -91,7 +107,7 @@
                     </div>
 
                     <!--Segunda carta: SERVICIOS-->
-                    <div class="Tarjetas card shadow-sm p-3 mb-5 bg-body justify-content-between ">
+                    <div class="Tarjetas card shadow-sm p-3 mb-5 bg-body justify-content-between" data-aos="zoom-in" data-aos-duration="1500">
                         <a href="./pages/servicios.html">
                             <img src="./assets/img/servicios_inicio.webp" class="card-img-top fotoTarjeta" alt="La imagen muestra una figura abstracta de colores grises y amarillos con lineas negras. Representa una figura compuesta por formas planas que en conjunto generan un volumen. Imagen típica del análisis morfológico de los cuerpos en el espacio." loading="lazy">
                             <div class="card-body textoTarjeta">
@@ -102,7 +118,7 @@
                     </div>
 
                     <!--Tercer carta: CREATIVIDAD-->
-                    <div class="Tarjetas card shadow-sm p-3 mb-5 bg-body justify-content-between">
+                    <div class="Tarjetas card shadow-sm p-3 mb-5 bg-body justify-content-between" data-aos="zoom-in" data-aos-duration="1500">
                         <a href="./pages/mi_arte.html">
                             <img src="./assets/img/creatividad_inicio.webp" class="card-img-top fotoTarjeta" alt="La imagen muestra un dibujo abstracto hecho a mano con lapices de colores y papel. Representa una persona meditando, que al rededor de su cabeza se entrecruzan varias lineas que construyen como un muro que separa a su mente del exterior. Las lineas del exterior son verdes, y a medida que se adentran en la cabeza, se van volviendo mas rosadas, con una técnica de degrade." loading="lazy">
                             <div class="card-body textoTarjeta">
@@ -147,6 +163,12 @@
     
         <!--Boopstrap js-->
         <script src="./js/bootstrap.bundle.min.js"></script>
+
+        <!--Aos script-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
     </body>
 </html>

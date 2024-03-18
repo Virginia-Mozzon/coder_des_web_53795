@@ -53,27 +53,32 @@ header ul a:hover {
   width: 75%;
 }
 .mainIndex .seccionSobreMi .contenedorSobreMi {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 15px;
-  grid-template-areas: "titulo titulo . . . " "foto foto texto texto texto" "foto foto texto texto texto" "foto foto texto texto texto" "foto foto texto texto texto";
   margin: 30px auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
-.mainIndex .seccionSobreMi .contenedorSobreMi .fotoSobreMi {
-  grid-area: foto;
-  object-fit: cover;
+.mainIndex .seccionSobreMi .contenedorSobreMi .izquierdaSobreMi {
+  width: 45%;
+  justify-content: center;
 }
-.mainIndex .seccionSobreMi .contenedorSobreMi .tituloSobreMi {
-  grid-area: titulo;
+.mainIndex .seccionSobreMi .contenedorSobreMi .izquierdaSobreMi .tituloSobreMi {
   border-bottom: 7px solid #343434;
   font-weight: 900;
   color: #343434;
 }
+.mainIndex .seccionSobreMi .contenedorSobreMi .izquierdaSobreMi picture .fotoSobreMi {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .mainIndex .seccionSobreMi .contenedorSobreMi .textoSobreMi {
-  grid-area: texto;
   margin: 0 auto;
   margin-left: 20px;
+  width: 45%;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .mainIndex .seccionTarjetas {
   background-color: #E6E8EA;
@@ -106,13 +111,17 @@ header ul a:hover {
     width: 90%;
   }
   .mainIndex .seccionSobreMi .contenedorSobreMi {
-    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
   }
-  .mainIndex .seccionSobreMi .contenedorSobreMi .fotoSobreMi {
+  .mainIndex .seccionSobreMi .contenedorSobreMi .izquierdaSobreMi {
+    width: 100%;
+  }
+  .mainIndex .seccionSobreMi .contenedorSobreMi .izquierdaSobreMi .fotoSobreMi {
     margin-bottom: 30px;
+  }
+  .mainIndex .seccionSobreMi .contenedorSobreMi .textoSobreMi {
+    width: 100%;
+    margin: 0 auto;
   }
   .mainIndex .seccionTarjetas .contenedorTarjetas {
     flex-wrap: nowrap;
@@ -135,21 +144,20 @@ header ul a:hover {
     height: 50vh;
   }
   .mainIndex .seccionSobreMi {
-    width: 85%;
+    width: 75%;
   }
   .mainIndex .seccionSobreMi .contenedorSobreMi {
-    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
-    width: 85%;
-    margin: 50px auto;
   }
-  .mainIndex .seccionSobreMi .contenedorSobreMi .fotoSobreMi {
-    width: 50%;
-    height: auto;
-    margin: auto;
+  .mainIndex .seccionSobreMi .contenedorSobreMi .izquierdaSobreMi {
+    width: 100%;
+  }
+  .mainIndex .seccionSobreMi .contenedorSobreMi .izquierdaSobreMi .fotoSobreMi {
     margin-bottom: 30px;
+  }
+  .mainIndex .seccionSobreMi .contenedorSobreMi .textoSobreMi {
+    width: 100%;
+    margin: 0 auto;
   }
   .mainIndex .seccionTarjetas .contenedorTarjetas {
     flex-wrap: nowrap;
@@ -1080,7 +1088,7 @@ header ul a:hover {
   font-weight: 900;
   font-size: 3rem;
   padding: 0 3rem;
-  margin: 0;
+  margin: 2rem 0;
 }
 .mainMiArte .dibujos .dibujos1 .izqDib1 {
   width: 50%;
@@ -1124,7 +1132,7 @@ header ul a:hover {
 .mainMiArte .dibujos .dibujos1 .izqDib1 .grilla .im3 {
   grid-area: im3;
 }
-.mainMiArte .dibujos .dibujos1 figure {
+.mainMiArte .dibujos .dibujos1 picture {
   width: 50%;
 }
 .mainMiArte .dibujos .separadorGris {
@@ -1160,7 +1168,7 @@ header ul a:hover {
 }
 .mainMiArte .cuadros .contenedorCuadros1 .cuadros1 .derecha .grilla {
   background-color: #E6E8EA;
-  width: 50%;
+  width: 75%;
   padding: 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1193,25 +1201,33 @@ header ul a:hover {
   grid-area: im5;
 }
 .mainMiArte .cuadros .cuadros2 {
-  height: 75vh;
+  width: 100%;
+  height: auto;
 }
 .mainMiArte .cuadros .cuadros2 .compo {
+  width: 50%;
   position: relative;
 }
-.mainMiArte .cuadros .cuadros2 .compo .im1 {
-  scale: 0.8;
+.mainMiArte .cuadros .cuadros2 .compo .cuadroCompleto {
+  width: 60%;
+  height: auto;
+  margin: auto;
   border: 10px solid #f5c126;
 }
-.mainMiArte .cuadros .cuadros2 .compo .im2 {
+.mainMiArte .cuadros .cuadros2 .compo .cuadroDetalle {
+  width: 30%;
+  height: 30%;
+  /* ----- Posicionar sobre el cuadro ----- */
   position: absolute;
-  height: 50%;
-  width: 50%;
+  right: 7px;
+  top: 20%;
+  /* ----- Sombra ----- */
   border-radius: 50%;
-  right: -10px;
-  top: 60px;
-  scale: 0.8;
-  object-fit: cover;
-  box-shadow: 18px 14px 14px -8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.25);
+}
+.mainMiArte .cuadros .cuadros2 .cuadroCaballete {
+  width: 50%;
+  height: auto;
 }
 .mainMiArte .fotos {
   background-color: #FBE7AA;
@@ -1300,9 +1316,78 @@ header ul a:hover {
   .mainMiArte .cuadros .contenedorCuadros1 .cuadros1 .derecha .grilla {
     width: 100%;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    grid-template-areas: "im1 im1 ttl ttl" "im1 im1 im3 im4" "im2 im2 im5 im5" "im2 im2 im5 im5";
   }
   .mainMiArte .cuadros .contenedorCuadros1 .cuadros1 .derecha .grilla h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  .mainMiArte .cuadros .cuadros2 {
+    flex-direction: column;
+  }
+  .mainMiArte .cuadros .cuadros2 .compo {
+    width: 85%;
+    height: auto;
+    margin: 50px auto;
+  }
+  .mainMiArte .cuadros .cuadros2 .compo .cuadroDetalle {
+    width: 30%;
+    height: auto;
+  }
+  .mainMiArte .cuadros .cuadros2 .cuadroCaballete {
+    width: 85%;
+    height: auto;
+  }
+  .mainMiArte .fotos .guardaFotos {
+    flex-wrap: wrap;
+  }
+  .mainMiArte .fotos .guardaFotos img {
+    object-fit: cover;
+    width: 20%;
+    height: auto;
+  }
+  .mainMiArte .fotos h2 {
+    font-size: 1.2rem;
+  }
+  .mainMiArte .fotos .grilla {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 7px;
+    grid-template-areas: "im1 im2" "im1 im3" "im4 im4" "im4 im4";
+  }
+}
+@media (min-width: 481px) and (max-width: 1100px) {
+  .mainMiArte .encabezado {
+    height: 60vh;
+  }
+  .mainMiArte .dibujos .dibujos1 .izqDib1 {
+    height: auto;
+  }
+  .mainMiArte .dibujos .dibujos1 picture {
+    height: auto;
+  }
+  .mainMiArte .cuadros .contenedorCuadros1 .cuadros1 figure {
+    width: 40%;
+  }
+  .mainMiArte .cuadros .contenedorCuadros1 .cuadros1 .derecha {
+    width: 60%;
+  }
+  .mainMiArte .cuadros .contenedorCuadros1 .cuadros1 .derecha .grilla {
+    width: 85%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    grid-template-areas: "im1 im1 ttl ttl" "im1 im1 im3 im4" "im2 im2 im5 im5" "im2 im2 im5 im5";
+  }
+  .mainMiArte .cuadros .contenedorCuadros1 .cuadros1 .derecha .grilla h2 {
+    font-size: 1.2rem;
   }
 }
 /* ---- FOOTER ----*/

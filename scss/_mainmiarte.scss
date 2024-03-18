@@ -5,7 +5,9 @@
         object-fit: contain;
     }
     
-    h1{@include titulos-mi-arte($titles-weight, 3rem, 0 3rem, 0);}
+    h1{
+        @include titulos-mi-arte($titles-weight, 3rem, 0 3rem, 2rem 0);
+    }
     
     .dibujos{
         .dibujos1{
@@ -29,7 +31,7 @@
                     .im3{grid-area: im3;}
                 }
             }
-            figure{
+            picture{
                 width: map-get($pct, 50);
             }
         }
@@ -69,7 +71,7 @@
                     .grilla{
                         
                         background-color: $bright-gray;
-                        width: map-get($pct, 50);
+                        width: map-get($pct, 75);
                         padding: map-get($sizes, 25);
     
                         @include grillas-template(4, 6, map-get($sizes, 5));
@@ -96,25 +98,36 @@
             }
         }
         .cuadros2{
-            height: 75vh;
-    
-            .compo {
+            width: map-get($pct, 100);
+            height: auto;
+            .compo{
+                width: map-get($pct, 50);
                 position: relative;
-                .im1 {
-                    scale: .8;
+                
+                .cuadroCompleto{
+                    width: map-get($pct, 60);
+                    height: auto;
+                    margin: auto;
                     border: 10px solid $orange-yellow; 
                 }
-                .im2{
+
+                .cuadroDetalle{
+                    width: map-get($pct, 30);
+                    height: map-get($pct, 30);
+                    
+                    /* ----- Posicionar sobre el cuadro ----- */
                     position: absolute;
-                    height: map-get($pct, 50);
-                    width: map-get($pct, 50);
-                    border-radius: map-get($pct, 50);
-                    right: -10px;
-                    top: 60px;
-                    scale: .8;
-                    object-fit: cover;
-                    box-shadow: 18px 14px 14px -8px rgba(0,0,0,0.25);
+                    right: map-get($sizes, 7);
+                    top: map-get($pct, 20);
+
+                    /* ----- Sombra ----- */
+                    border-radius:50%;
+                    box-shadow: 0 0 14px 3px rgba(0,0,0,0.25);
                 }
+            }
+            .cuadroCaballete{
+                width: map-get($pct, 50);
+                height: auto;
             } 
         }
     }
@@ -183,7 +196,79 @@
                         .grilla{
                             width: map-get($pct, 100);
                             padding: 0;
-                            h2{font-size: 1.5rem;}
+                            h2{font-size: 1rem;}
+                            @include grillas-template(4, 4, map-get($sizes, 5));
+                            grid-template-areas: "im1 im1 ttl ttl"
+                                                 "im1 im1 im3 im4"
+                                                 "im2 im2 im5 im5"
+                                                 "im2 im2 im5 im5";
+                        }
+                    }
+                }   
+            }
+            .cuadros2{
+                flex-direction: column;
+                .compo{
+                    width: map-get($pct, 85);
+                    height: auto;
+                    margin: map-get($sizes, 50) auto;
+
+                    .cuadroDetalle{
+                        width: map-get($pct, 30);
+                        height: auto;
+                    }
+                }
+                .cuadroCaballete{
+                    width: map-get($pct, 85);
+                    height: auto;
+                }
+            }
+        }
+
+        .fotos{
+            .guardaFotos{
+                flex-wrap: wrap;
+                img{@include imagenes-grillas(20%, auto);}
+                
+            }
+            h2{ font-size: 1.2rem;}
+            .grilla{
+                width: map-get($pct, 90);
+                @include grillas-template (2, 4, map-get($sizes, 7));
+                grid-template-areas: "im1 im2"
+                                     "im1 im3"
+                                     "im4 im4"
+                                     "im4 im4";
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width:1100px){
+    .mainMiArte{
+        .encabezado{height: 60vh;}
+        .dibujos{
+            .dibujos1{
+                .izqDib1{height: auto;}
+                picture{height: auto;}
+            }
+        }
+        
+        .cuadros{
+            .contenedorCuadros1{
+                .cuadros1{
+                    figure{width: map-get($pct, 40);}
+                    .derecha{
+                        width: map-get($pct, 60);
+                        .grilla{
+                            width: map-get($pct , 85);
+                            padding: map-get($sizes, 10);
+                            @include grillas-template(4, 4, map-get($sizes, 5));
+                            grid-template-areas: "im1 im1 ttl ttl"
+                                                 "im1 im1 im3 im4"
+                                                 "im2 im2 im5 im5"
+                                                 "im2 im2 im5 im5";
+                            h2{font-size: 1.2rem;}
                         }
                     }
                 }
@@ -191,5 +276,3 @@
         }
     }
 }
-
-@media (min-width: 481px) and (max-width:1100px){}

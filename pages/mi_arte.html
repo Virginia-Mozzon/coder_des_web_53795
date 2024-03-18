@@ -16,6 +16,10 @@
         <!--CSS-->
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
+
+        <!--Animaciones Aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
     </head>
     
     <body>
@@ -67,7 +71,7 @@
                 <!--Coleccion dibujos de viaje-->
                 <div class="dibujos1 d-flex align-items-center w-100">
                     
-                    <div class="izqDib1">
+                    <div class="izqDib1" data-aos="fade-up" data-aos-duration="3000" >
                         <!--Guarda con imagenes de cuaderno-->
                         <div class="guarda d-flex">
                             <!--Primera imagen del cuaderno: el elefante-->
@@ -93,18 +97,23 @@
                         </div>
                     </div>
                     <!-- class="w-100" -->
-                    <figure >
+                    <picture>
                         <!--Cuadro derecho-->
-                        <img class="w-100 h-auto" src="../assets/img/mi_arte_cuadro_01.webp" alt="Imagen de un cuadro abstracto con colores vibrantes y un reborde negro en el marco. Representa el rostro de una mujer de piel azul, con un tercer ojo que sale de su frente, que se transforma en una flor con un dios de ojos brillantes. De la mujer se desprenden multiples petalos de colores, que en conjunto forman un degrade que parte de una base roja hasta llegar a la altura en tonos frios. El fondo es un tramado de hexagonos de colores verdes y celestes. En el cuello de la mujer, una bola, similar a un colla, genera un brillo que se extiende al rostro del personaje principal." loading="lazy">
-                    </figure>           
+                        <source media="(max-width: 480px)" srcset="../assets/img/mi_arte_cuadro_01_480.webp">
+                        <source media="(min-width: 481px)" srcset="../assets/img/mi_arte_cuadro_01.webp">
+                        <img data-aos="fade-up" data-aos-duration="3000" 
+                             class="w-100 h-auto" src="../assets/img/mi_arte_cuadro_01.webp" alt="Imagen de un cuadro abstracto con colores vibrantes y un reborde negro en el marco. Representa el rostro de una mujer de piel azul, con un tercer ojo que sale de su frente, que se transforma en una flor con un dios de ojos brillantes. De la mujer se desprenden multiples petalos de colores, que en conjunto forman un degrade que parte de una base roja hasta llegar a la altura en tonos frios. El fondo es un tramado de hexagonos de colores verdes y celestes. En el cuello de la mujer, una bola, similar a un colla, genera un brillo que se extiende al rostro del personaje principal." loading="lazy">
+                    </picture>           
                 </div>
                 
                 <hr class="separadorGris">
                 
                 <!--Separador final: dibujo del Tigre-->
                 <div class="dibujos2">
-                    <img class="tigreFondo h-auto" src="../assets/img/mi_arte_tigre.webp" alt="La imagen muestra un dibujo abstracto hecho a mano de un tigre de bengala naranja con rayas negras, en medio de lo que parece ser un campo de bambú parado sobre un charco de agua azul.">
-                    <img class="tigreArriba" src="../assets/img/mi arte_foco_tigre.webp" alt="La imagen muestra un dibujo abstracto visto desde un lateral hecho a mano de un tigre de bengala naranja con rayas negras, en medio de lo que parece ser un campo de bambú parado sobre un charco de agua azul.">
+                    <img data-aos="fade-up" data-aos-duration="3000" 
+                    class="tigreFondo h-auto" src="../assets/img/mi_arte_tigre.webp" alt="La imagen muestra un dibujo abstracto hecho a mano de un tigre de bengala naranja con rayas negras, en medio de lo que parece ser un campo de bambú parado sobre un charco de agua azul.">
+                    <img data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="3000"
+                    class="tigreArriba" src="../assets/img/mi arte_foco_tigre.webp" alt="La imagen muestra un dibujo abstracto visto desde un lateral hecho a mano de un tigre de bengala naranja con rayas negras, en medio de lo que parece ser un campo de bambú parado sobre un charco de agua azul.">
                 </div>
                 <hr class="separadorGris">
             </section>
@@ -123,7 +132,7 @@
                         <div class="derecha d-flex">
                             <hr class="w-15">
 
-                            <div class="grilla w-75">
+                            <div class="grilla">
                                 <h2 class="d-flex justify-content-center align-items-center">SE MATERIALIZA EN UN LIENZO</h2>
                                 <!--Imagen del cuadro de las escaleras-->
                                 <img class="im1" src="../assets/img/cuadro_01_apofenia.webp" alt="La imagen muestra un cuadro abstracto de una noche en un mundo fantástico. En el centro una mujer desnuda que sale de un velo oscuro, con una corona en su cabeza hecha de laminas plateadas. Al rededor de la mujer, una escalera de colores violetas, que asciende hasta el centro del cuadro. De ahi vemos una esfera negra con luces blancas que tiene hilos que lo conectan a distintas partes del cuadro. En el lateral izquierdo de la imagen, se recorta un rombo con un campo verde. Y del lado derecho, el recorte muestra una playa con un mar aterrizando. Se ven múltiples detalles, como icosaedros blancos o huecos con estrellas en su interior." loading="lazy">
@@ -142,15 +151,17 @@
                 
 
                 <!--Tercer bloque, lienzo de bianca en caballete-->
-                <div class="cuadros2 d-flex justify-content-between w-75 m-auto">
-                    <div class="compo d-flex w-50">
-                    <!--Primera parte: cuadro de frente-->
-                        <img class="im1" src="../assets/img/cuadro_06_frente.webp" alt="La imagen muestra un cuadro surrealista. Se compone de un marco interno negro, con un agujero en el centro, como si fuera un liezo que fue recortado. En ese agujero se puede ven un universo desértico, con una laguna de agua debajo con fuertes olas. En el centro de la laguna, una jaula con textura ahuecada. En el horizonte se pueden ver varias pirámides, y un cielo naranja como el de un atardecer. En el centro de la imagen, dos rostros, como si fueran máscaras teatrales, cuya superficie se funde con una forma geométrica extraña. Por encima, se extiende un árbol, con una arquitectura semejante al acorazado que se encontraba sobre el lago." loading="lazy">
+                <div class="cuadros2 d-flex justify-content-between m-auto">
+                    <div class="compo d-flex">
+                        <!--Primera parte: cuadro de frente-->
+                        <img class="cuadroCompleto" src="../assets/img/cuadro_06_frente.webp" alt="La imagen muestra un cuadro surrealista. Se compone de un marco interno negro, con un agujero en el centro, como si fuera un liezo que fue recortado. En ese agujero se puede ven un universo desértico, con una laguna de agua debajo con fuertes olas. En el centro de la laguna, una jaula con textura ahuecada. En el horizonte se pueden ver varias pirámides, y un cielo naranja como el de un atardecer. En el centro de la imagen, dos rostros, como si fueran máscaras teatrales, cuya superficie se funde con una forma geométrica extraña. Por encima, se extiende un árbol, con una arquitectura semejante al acorazado que se encontraba sobre el lago." loading="lazy">
                         <!--Recorte del cuadro de cerca-->
-                        <img class="im2" src="../assets/img/cuadro_06_cerca.webp" alt="La imagen muestra un cuadro surrealista en detalle. En el centro de la imagen, dos rostros, como si fueran máscaras teatrales, cuya superficie se funde con una forma geométrica extraña." loading="lazy">
+                        <img class="cuadroDetalle" src="../assets/img/cuadro_06_cerca_02.webp" alt="La imagen muestra un cuadro surrealista en detalle. En el centro de la imagen, dos rostros, como si fueran máscaras teatrales, cuya superficie se funde con una forma geométrica extraña." loading="lazy">
+                        
+
                     </div>
                     <!--Cuadro sobre el caballete-->
-                    <img class="im3 w-50" src="../assets/img/cuadro_06_caballete.webp" alt="La imagen muestra un cuadro surrealista sobre un caballete. Se compone de un marco interno negro, con un agujero en el centro, como si fuera un liezo que fue recortado. En ese agujero se puede ven un universo desértico, con una laguna de agua debajo con fuertes olas. En el centro de la laguna, una jaula con textura ahuecada. En el horizonte se pueden ver varias pirámides, y un cielo naranja como el de un atardecer. En el centro de la imagen, dos rostros, como si fueran máscaras teatrales, cuya superficie se funde con una forma geométrica extraña. Por encima, se extiende un árbol, con una arquitectura semejante al acorazado que se encontraba sobre el lago." loading="lazy">
+                    <img class="cuadroCaballete" src="../assets/img/cuadro_06_caballete.webp" alt="La imagen muestra un cuadro surrealista sobre un caballete. Se compone de un marco interno negro, con un agujero en el centro, como si fuera un liezo que fue recortado. En ese agujero se puede ven un universo desértico, con una laguna de agua debajo con fuertes olas. En el centro de la laguna, una jaula con textura ahuecada. En el horizonte se pueden ver varias pirámides, y un cielo naranja como el de un atardecer. En el centro de la imagen, dos rostros, como si fueran máscaras teatrales, cuya superficie se funde con una forma geométrica extraña. Por encima, se extiende un árbol, con una arquitectura semejante al acorazado que se encontraba sobre el lago." loading="lazy">
                 </div>
             </section>
 
@@ -238,6 +249,11 @@
 
         <!--Boopstrap js-->
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <!--Aos script-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         
     </body>
 </html>
