@@ -43,13 +43,13 @@
         .dibujos2{
             width: map-get($sizes, 100);
             position: relative;
-            .tigreFondo{ width: map-get($pct, 90);}
+            .tigreFondo{width: map-get($pct, 75);}
             .tigreArriba{
                 width: map-get($pct, 30);
                 height: auto;
                 position: absolute;
                 top: map-get($sizes, 150);
-                right: map-get($sizes, 10);
+                right: map-get($sizes, 15);
                 border-radius: 100px 0px 0px 100px;
             }
         }

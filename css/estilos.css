@@ -1143,14 +1143,14 @@ header ul a:hover {
   position: relative;
 }
 .mainMiArte .dibujos .dibujos2 .tigreFondo {
-  width: 90%;
+  width: 75%;
 }
 .mainMiArte .dibujos .dibujos2 .tigreArriba {
   width: 30%;
   height: auto;
   position: absolute;
   top: 150px;
-  right: 10px;
+  right: 15px;
   border-radius: 100px 0px 0px 100px;
 }
 .mainMiArte .cuadros {
