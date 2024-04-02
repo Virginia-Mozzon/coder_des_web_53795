@@ -108,7 +108,11 @@
                     width: map-get($pct, 60);
                     height: auto;
                     margin: auto;
-                    border: 10px solid $orange-yellow; 
+                    border: 10px solid $orange-yellow;
+                    transition: transform 1s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                 }
 
                 .cuadroDetalle{
@@ -123,6 +127,11 @@
                     /* ----- Sombra ----- */
                     border-radius:50%;
                     box-shadow: 0 0 14px 3px rgba(0,0,0,0.25);
+
+                    transition: transform 1s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                 }
             }
             .cuadroCaballete{
@@ -148,7 +157,13 @@
             @include grillas-template (4, 2, map-get($sizes, 10));
             grid-template-areas: "im1 im2 im4 im4"
                                  "im1 im3 im4 im4";
-            img{object-fit: cover;}                     
+            img{
+                object-fit: cover;
+                transition: transform 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }                     
             .im1{grid-area: im1;}
             .im2{grid-area: im2;}
             .im3{grid-area: im3;}

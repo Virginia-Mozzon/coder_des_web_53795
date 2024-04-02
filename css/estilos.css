@@ -85,11 +85,15 @@ header ul a:hover {
 }
 .mainIndex .seccionTarjetas .contenedorTarjetas {
   width: 85%;
+  transition: transform 1s;
 }
 .mainIndex .seccionTarjetas .contenedorTarjetas .Tarjetas {
   width: 75%;
   margin: 50px 50px;
   border-radius: 16px 16px 16px 16px;
+}
+.mainIndex .seccionTarjetas .contenedorTarjetas .Tarjetas:hover {
+  transform: scale(1.1);
 }
 .mainIndex .seccionTarjetas a {
   text-decoration: none;
@@ -256,6 +260,9 @@ header ul a:hover {
   border: 0;
   color: #343434;
 }
+.mainContactame .actualidad .elementosActualidad .sectorElementosActualidad .formContactame .enviarBoton {
+  background-color: #99E6B3;
+}
 .mainContactame .actualidad .elementosActualidad .sectorElementosActualidad .formContactame input {
   background-color: #FAFAF9;
 }
@@ -373,6 +380,16 @@ header ul a:hover {
   width: 16.6%;
   height: auto;
   object-fit: contain;
+  transition: transform 1s;
+}
+.mainServicios .morfologia .imagenBanda1:hover {
+  transform: scale(1.4);
+}
+.mainServicios .morfologia .ultimaImagen {
+  transition: transform 1s;
+}
+.mainServicios .morfologia .ultimaImagen:hover {
+  transform: scale(1.4) translate(-75px);
 }
 .mainServicios .morfologia .grillaMorfologia {
   width: 100%;
@@ -382,6 +399,10 @@ header ul a:hover {
 }
 .mainServicios .morfologia .grillaMorfologia .grilla1Morfo .imagen {
   width: 25%;
+  transition: transform 1s;
+}
+.mainServicios .morfologia .grillaMorfologia .grilla1Morfo .imagen:hover {
+  transform: scale(1.4);
 }
 .mainServicios .morfologia .grillaMorfologia .grilla1Morfo .texto {
   color: #5B574B;
@@ -396,30 +417,69 @@ header ul a:hover {
   width: 12.5%;
   height: auto;
   object-fit: contain;
+  transition: transform 1s;
+}
+.mainServicios .morfologia .imagenBanda2:hover {
+  transform: scale(1.4);
 }
 .mainServicios .disFuncional {
   background-color: #E5E5E3;
   width: 100%;
 }
+.mainServicios .disFuncional .ultimaImagen {
+  transition: transform 1s;
+}
+.mainServicios .disFuncional .ultimaImagen:hover {
+  transform: scale(1.4) translate(-75px);
+}
 .mainServicios .disFuncional .imagen1 {
   width: 30%;
   height: auto;
   object-fit: contain;
+  transition: transform 1s;
+}
+.mainServicios .disFuncional .imagen1:hover {
+  transform: scale(1.4);
 }
 .mainServicios .disFuncional .imagen2 {
   width: 40%;
   height: auto;
   object-fit: contain;
+  transition: transform 1s;
+}
+.mainServicios .disFuncional .imagen2:hover {
+  transform: scale(1.4);
 }
 .mainServicios .disFuncional .imagen3 {
   width: 30%;
   height: auto;
   object-fit: contain;
+  transition: transform 1s;
+}
+.mainServicios .disFuncional .imagen3:hover {
+  transform: scale(1.4);
+}
+.mainServicios .disFuncional .estante {
+  width: 100%;
+  margin: 0 auto;
 }
 .mainServicios .disFuncional .estante img {
-  object-fit: cover;
-  width: auto;
-  height: 47vh;
+  transition: transform 1s;
+}
+.mainServicios .disFuncional .estante img:hover {
+  transform: scale(1.4);
+}
+.mainServicios .disFuncional .estante .im1 {
+  width: 20%;
+}
+.mainServicios .disFuncional .estante .im2 {
+  width: 20%;
+}
+.mainServicios .disFuncional .estante .im3 {
+  width: 40%;
+}
+.mainServicios .disFuncional .estante .im4 {
+  width: 20%;
 }
 .mainServicios .renders {
   width: 100%;
@@ -639,6 +699,7 @@ header ul a:hover {
 }
 .mainDestacados .cueros {
   background-color: #c9c9cb;
+  transition: transform 1s;
 }
 .mainDestacados .cueros b {
   color: #f2a42e;
@@ -660,6 +721,10 @@ header ul a:hover {
   object-fit: cover;
   width: 100%;
   height: auto;
+  transition: transform 1s;
+}
+.mainDestacados .cueros .cuerosContenedor .cuerosGrilla1 img:hover {
+  transform: scale(1.5);
 }
 .mainDestacados .cueros .cuerosContenedor .cuerosGrilla1 .imagenCueros1 {
   grid-area: imagenCueros1;
@@ -694,6 +759,10 @@ header ul a:hover {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 1s;
+}
+.mainDestacados .cueros .cuerosContenedor .cuerosGrilla2 img:hover {
+  transform: scale(1.5);
 }
 .mainDestacados .cueros .cuerosContenedor .cuerosGrilla2 .textoCueros {
   padding: 15px;
@@ -723,6 +792,10 @@ header ul a:hover {
   width: 24.3%;
   height: auto;
   object-fit: contain;
+  transition: transform 1s;
+}
+.mainDestacados .ypf .guardaYPF1 .ypfBanda:hover {
+  transform: scale(1.5);
 }
 .mainDestacados .ypf .grillaYPF1 {
   width: 85%;
@@ -736,6 +809,10 @@ header ul a:hover {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 1s;
+}
+.mainDestacados .ypf .grillaYPF1 img:hover {
+  transform: scale(1.5);
 }
 .mainDestacados .ypf .grillaYPF1 .tituloYPF {
   grid-area: texto;
@@ -763,17 +840,26 @@ header ul a:hover {
   grid-area: imagen6;
 }
 .mainDestacados .ypf .grillaYPF2 {
-  width: 85%;
+  width: 95%;
+  height: 125vh;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  gap: 1rem;
-  grid-template-areas: "im1 im1 im1 im3 im3 im3 im3 im5 im5 ." "im1 im1 im1 im3 im3 im3 im3 im5 im5 ." "im1 im1 im1 txt txt txt txt im5 im5 ." "im1 im1 im1 txt txt txt txt . im6 im6" "im2 im2 im2 txt txt txt txt . im6 im6" "im2 im2 im2 txt txt txt txt . im6 im6" "im2 im2 im2 im4 im4 im4 im4 im7 im7 im7" "im2 im2 im2 im4 im4 im4 im4 im7 im7 im7";
+  grid-template-columns: 41% 45% 14%;
+  grid-template-rows: 7fr 4fr 3fr 3fr 3fr 4fr 5fr;
+  grid-template-areas: "im1 im3 im5" "im1 txt im5" "im1 txt im6" "im1 txt im6" "im2 txt im6" "im2 txt im6" "im2 im4 im7";
+  gap: 0.5rem;
 }
 .mainDestacados .ypf .grillaYPF2 img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 1s;
+}
+.mainDestacados .ypf .grillaYPF2 img:hover {
+  transform: scale(1.5);
+}
+.mainDestacados .ypf .grillaYPF2 .ypfDispensador1:hover, .mainDestacados .ypf .grillaYPF2 .ypfDispensador2:hover, .mainDestacados .ypf .grillaYPF2 .ypfCarteles:hover {
+  transform: translate(-50px) scale(1.5);
 }
 .mainDestacados .ypf .grillaYPF2 .textoYPF {
   padding: 2rem;
@@ -818,6 +904,10 @@ header ul a:hover {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 1s;
+}
+.mainDestacados .lineaReciclaje .grillaReciclaje1 img:hover {
+  transform: scale(1.2);
 }
 .mainDestacados .lineaReciclaje .grillaReciclaje1 .tituloReciclaje {
   grid-area: ttl;
@@ -838,6 +928,9 @@ header ul a:hover {
 .mainDestacados .lineaReciclaje .grillaReciclaje1 .im4 {
   grid-area: im4;
 }
+.mainDestacados .lineaReciclaje .grillaReciclaje1 .im4:hover {
+  transform: translate(-50px) scale(1.2);
+}
 .mainDestacados .lineaReciclaje .grillaReciclaje1 .im5 {
   grid-area: im5;
   height: auto;
@@ -851,9 +944,16 @@ header ul a:hover {
 .mainDestacados .lineaReciclaje .grillaReciclaje1 .im7 {
   grid-area: im7;
 }
+.mainDestacados .lineaReciclaje .grillaReciclaje1 .im7:hover {
+  transform: translate(-50px) scale(1.2);
+}
 .mainDestacados .lineaReciclaje .contenedorTextoReciclaje img {
+  transition: transform 1s;
   width: 50%;
   height: auto;
+}
+.mainDestacados .lineaReciclaje .contenedorTextoReciclaje img:hover {
+  transform: scale(1.2);
 }
 .mainDestacados .lineaReciclaje .contenedorTextoReciclaje .textoReciclaje {
   padding: 0;
@@ -873,6 +973,10 @@ header ul a:hover {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 1s;
+}
+.mainDestacados .lineaReciclaje .grillaReciclaje2 img:hover {
+  transform: scale(1.2);
 }
 .mainDestacados .lineaReciclaje .grillaReciclaje2 .im1 {
   grid-area: im1;
@@ -993,6 +1097,9 @@ header ul a:hover {
   .mainDestacados .encabezadoDestacados h1 {
     height: 45vh;
     font-size: 3rem;
+  }
+  .mainDestacados .cueros .cuerosContenedor {
+    width: 95%;
   }
   .mainDestacados .cueros .cuerosContenedor .cuerosGrilla1 {
     display: grid;
@@ -1213,6 +1320,10 @@ header ul a:hover {
   height: auto;
   margin: auto;
   border: 10px solid #f5c126;
+  transition: transform 1s;
+}
+.mainMiArte .cuadros .cuadros2 .compo .cuadroCompleto:hover {
+  transform: scale(1.2);
 }
 .mainMiArte .cuadros .cuadros2 .compo .cuadroDetalle {
   width: 30%;
@@ -1224,6 +1335,10 @@ header ul a:hover {
   /* ----- Sombra ----- */
   border-radius: 50%;
   box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 1s;
+}
+.mainMiArte .cuadros .cuadros2 .compo .cuadroDetalle:hover {
+  transform: scale(1.2);
 }
 .mainMiArte .cuadros .cuadros2 .cuadroCaballete {
   width: 50%;
@@ -1255,6 +1370,10 @@ header ul a:hover {
 }
 .mainMiArte .fotos .grilla img {
   object-fit: cover;
+  transition: transform 1s;
+}
+.mainMiArte .fotos .grilla img:hover {
+  transform: scale(1.2);
 }
 .mainMiArte .fotos .grilla .im1 {
   grid-area: im1;

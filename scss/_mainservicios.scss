@@ -27,28 +27,90 @@
         background-color: $medium-champagne;
         width: map-get($pct,100);
         
-        .imagenBanda1{ @include imagenes-banda-servicios(16.6%);}
+        .imagenBanda1{ 
+            @include imagenes-banda-servicios(16.6%);
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+        .ultimaImagen{
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.4) translate(-75px);
+            }
+        }
         .grillaMorfologia{
             width: map-get($pct,100);
             .grilla1Morfo{
                 width: map-get($pct,100);
-                .imagen{width: map-get($pct,25);}
+                .imagen{
+                    width: map-get($pct,25);
+                    transition: transform 1s;
+                    &:hover{
+                        transform: scale(1.4);
+                    }
+                }
                 .texto {
                     color: $ebony;
                     b{color: $marigold;}}
-            }
+                }
             .grilla2Morfo{width: map-get($pct,60);}
         }
-        .imagenBanda2{@include imagenes-banda-servicios(12.5%);}
+        .imagenBanda2{
+            @include imagenes-banda-servicios(12.5%);
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
     }
 
     .disFuncional{
         background-color: $platinum;
         width: map-get($pct,100);
-        .imagen1{@include imagenes-banda-servicios (map-get($pct,30));}
-        .imagen2{@include imagenes-banda-servicios (map-get($pct,40));}
-        .imagen3{@include imagenes-banda-servicios (map-get($pct,30));}
-        .estante{img{@include imagenes-grillas(auto, 47vh);}}
+        .ultimaImagen{
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.4) translate(-75px);
+            }
+        }
+        
+        .imagen1{
+            @include imagenes-banda-servicios (map-get($pct,30));
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+        .imagen2{
+            @include imagenes-banda-servicios (map-get($pct,40));
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+        .imagen3{
+            @include imagenes-banda-servicios (map-get($pct,30));
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+        .estante{
+            img{
+                transition: transform 1s;
+                &:hover{
+                    transform: scale(1.4);
+                }
+            }
+            width: map-get($pct, 100);
+            margin: 0 auto;
+            .im1{width: 20%;}
+            .im2{width: 20%;}
+            .im3{width: 40%;}
+            .im4{width: 20%;}
+        }
     }
 
     .renders{

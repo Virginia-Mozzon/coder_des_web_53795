@@ -51,11 +51,20 @@
         background-color: $bright-gray;
 
         .contenedorTarjetas{
+            
+
             width: map-get($pct, 85);
+            transition: transform 1s;
+
+
             .Tarjetas{
                 width: map-get($pct, 75);
                 margin: map-get($sizes, 50) map-get($sizes, 50);
                 border-radius: 16px 16px 16px 16px;
+                
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
             
 

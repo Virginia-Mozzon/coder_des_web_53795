@@ -44,6 +44,9 @@
                         border: 0;
                         color: $jet;
                     }
+                    .enviarBoton{
+                        background-color:$teal-deer;
+                    }
                     input{
                         background-color: $lotion;
                         &::placeholder{
